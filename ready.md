@@ -30,32 +30,30 @@ Our code to solve:
 #!/usr/bin/env python3
 from socket import socket
 
-p = 160634950613302858781995506902938412625377360249559915379491492274326359260806831823821711441204122060415286351711411013883400510041411782176467940678464161205204391247137689678794367049197824119717278923753940984084059450704378828123780678883777306239500480793044460796256306557893061457956479624163771194201
+p = <from task>
 E = 10e-8
 
 def calc(mul, x1, x2):
-	return abs((x1 - (mul * x2)%p) % p) < E , abs((x2 - (mul * x1)%p) % p) < E
+  return abs((x1 - (mul * x2)%p) % p) < E , abs((x2 - (mul * x1)%p) % p) < E
 
 res = ''
 for i in range(260*16):
-	mul = 2 if i == 0 else (mul**2 % p)
-	a,b = map(lambda x: hex(int(x, 2))[2:].encode()+b'\r\n',('1'+res, '0'+res))
-
-	with socket() as s:
-		s.connect(('ppc2.chal.ctf.westerns.tokyo', 28459))
-		s.send(a)
-		a = s.recv(2048).strip()[2:].decode()
-		s.send(b)
-		b = s.recv(2048).strip()[2:].decode()
-
-	a,b = map(lambda x:int(x, 16), (a,b))
-
-	v1, v2 = calc(mul, a, b)
-	if v1 and v2:
-		print('WRONG!')
-		print(res)
-		print(v1, v2)
-		exit()
-	res = ('1' if not v1 else '0') + res
-	print('res:', res)
+  mul = 2 if i == 0 else (mul**2 % p)
+  a,b = map(lambda x: hex(int(x, 2))[2:].encode()+b'\r\n',('1'+res, '0'+res))
+  
+  with socket() as s:
+    s.connect(('ppc2.chal.ctf.westerns.tokyo', 28459))
+    s.send(a)
+    a = s.recv(2048).strip()[2:].decode()
+    s.send(b)
+    b = s.recv(2048).strip()[2:].decode()
+    
+  a,b = map(lambda x:int(x, 16), (a,b))
+  v1, v2 = calc(mul, a, b)
+  if v1 and v2:
+    print('WRONG!')
+    print(res, v1, v2)
+    exit()
+  res = ('1' if not v1 else '0') + res
+  print('res:', res)
 ```
