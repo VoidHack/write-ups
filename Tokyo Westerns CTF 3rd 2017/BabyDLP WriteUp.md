@@ -26,7 +26,7 @@ __1__)
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20X_%7B1%7D-k_%7B1%7D*p%20%3D%202%20*%20%28X_%7B0%7D-k_%7B0%7D*p%29) => ![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%202%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-2*x_%7B0%7D%7D%7Bp%7D) <br/><br/>
 
 Left parts are integers. It means, right are integers too. Now we will find integer variant (__0__ or __1__) and save result. <br/><br/>
-Second step is to undestand, how to find other bits. Now we will XOR with __1(i-1 random bits)__ and __0(same i-1 random bits)__ to get results, which degrees differ only in i position and one result is ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7B2%5E%7Bi-1%7D%7D) times larger. (![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%20%282%5E%7B2%5E%7Bi%7D%7D%29%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-%282%5E%7B2%5E%7Bi%7D%7D%29*x_%7B0%7D%7D%7Bp%7D) and otherwise)<br/><br/>
+Second step is to undestand, how to find other bits. Now we will XOR with __1(i-1 random bits)__ and __0(same i-1 random bits)__ to get results, which degrees differ only in i position and one result is ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7B2%5E%7Bi%7D%7D) times larger. (![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%20%282%5E%7B2%5E%7Bi%7D%7D%29%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-%282%5E%7B2%5E%7Bi%7D%7D%29*x_%7B0%7D%7D%7Bp%7D) and otherwise)<br/><br/>
 It takes a lot of memory and time to calculate multiplier. We optimize it with modulus multiply. <br/><br/>
 
 Our code to solve:
