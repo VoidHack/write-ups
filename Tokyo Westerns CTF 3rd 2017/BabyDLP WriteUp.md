@@ -2,14 +2,14 @@
 ## _BabyDLP_
 
 
-We need to solve equation like <br/>
+We need to solve equation like: <br/>
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s%7D%5Cmod%20p%20%3D%20X)
 <br />
 where:<br />
-__p__ is a big prime number; <br/>
-__m__ is our flag in bits; <br/>
-__s__ is our input <br/>
-__X__ is out output. <br/><br/>
+- __p__ is a big prime number; <br/>
+- __m__ is our flag in bits; <br/>
+- __s__ is our input <br/>
+- __X__ is out output. <br/><br/>
 We can only try to guess the bits of the flag using XOR one by one from the end of the binary number.<br />
 
 The first step is the XORing with __0__ and __1__: <br/>
