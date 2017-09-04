@@ -1,3 +1,7 @@
+# __Tokyo Westerns CTF 3rd 2017.__ 
+## _BabyDLP_
+
+
 We need to solve equation like <br/>
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s%7D%5Cmod%20p%20%3D%20X)
 <br />
