@@ -1,6 +1,17 @@
 # __Tokyo Westerns CTF 3rd 2017.__ 
 ## _BabyDLP_
 
+## Information
+**Category:** Crypto
+**Points:** 69
+**Solves:** 91
+**Description:** 
+> Usually, Baby* is easy. **ppc2.chal.ctf.westerns.tokyo:28459**
+
+[baby-dlp.7z](https://twctf2017.azureedge.net/attachments/baby-dlp.7z-0d3cc9d636e664e37fd628b723b121bcaeb514b857a324ebd01c6e1e734b31de)
+
+
+## Solution
 
 We need to solve equation like: <br/>
 ![equation](./images/1.png)
