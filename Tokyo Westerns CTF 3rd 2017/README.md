@@ -8,7 +8,7 @@
 **Description:** 
 > Usually, Baby* is easy. **ppc2.chal.ctf.westerns.tokyo:28459**
 
-[baby-dlp.7z](https://twctf2017.azureedge.net/attachments/baby-dlp.7z-0d3cc9d636e664e37fd628b723b121bcaeb514b857a324ebd01c6e1e734b31de)
+[server.py](./server.py)
 
 
 ## Solution
