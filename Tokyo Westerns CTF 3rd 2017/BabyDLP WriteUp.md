@@ -6,30 +6,30 @@ We need to solve equation like <br/>
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s%7D%5Cmod%20p%20%3D%20X)
 <br />
 where:<br />
-__p__ is big prime number; <br/>
+__p__ is a big prime number; <br/>
 __m__ is our flag in bits; <br/>
 __s__ is our input <br/>
 __X__ is out output. <br/><br/>
-We can only try to guess the bits of flag using XOR one by one from the end.<br />
+We can only try to guess the bits of the flag using XOR one by one from the end of the binary number.<br />
 
-First step is XORing with __0__ and __1__: <br/>
+The first step is the XORing with __0__ and __1__: <br/>
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s_%7B0%7D%7D&plus;k_%7B0%7D*p%20%3D%20X_%7B0%7D)<br/>
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s_%7B1%7D%7D&plus;k_%7B1%7D*p%20%3D%20X_%7B1%7D) <br/><br/>
 
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B0%7D) and 
-![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D) differ only in last bit. <br/>
-If the last bit of __m__ is __0__, than ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B0%7D) = 1 + ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D), otherwise, 1 + ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B0%7D) = ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D) => <br/>
+![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D) differ only in the last bit. <br/>
+If the last bit of __m__ is __0__, then ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B0%7D) = 1 + ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D), otherwise, 1 + ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B0%7D) = ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D) => <br/>
  => ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s_%7B0%7D%7D) = ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%20*%202%5E%7Bm%20%5Coplus%20s_%7B1%7D%7D) (__m__'s last bit is __0__) or ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s_%7B1%7D%7D) = ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%20*%202%5E%7Bm%20%5Coplus%20s_%7B0%7D%7D) (__m__'s last bit is __1__) <br/><br/>
 __0__)
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20X_%7B0%7D-k_%7B0%7D*p%20%3D%202%20*%20%28X_%7B1%7D-k_%7B1%7D*p%29) => ![equation](https://latex.codecogs.com/gif.latex?k_%7B0%7D%20-%202%20*%20k_%7B1%7D%20%3D%20%5Cfrac%7Bx_%7B0%7D-2*x_%7B1%7D%7D%7Bp%7D) <br/>
 __1__)
 ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20X_%7B1%7D-k_%7B1%7D*p%20%3D%202%20*%20%28X_%7B0%7D-k_%7B0%7D*p%29) => ![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%202%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-2*x_%7B0%7D%7D%7Bp%7D) <br/><br/>
 
-Left parts are integers. It means, right are integers too. Now we will find integer variant (__0__ or __1__) and save result. <br/><br/>
-Second step is to undestand, how to find other bits. Now we will XOR with __1(i-1 random bits)__ and __0(same i-1 random bits)__ to get results, which degrees differ only in i position and one result is ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7B2%5E%7Bi%7D%7D) times larger. (![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%20%282%5E%7B2%5E%7Bi%7D%7D%29%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-%282%5E%7B2%5E%7Bi%7D%7D%29*x_%7B0%7D%7D%7Bp%7D) and otherwise)<br/><br/>
-It takes a lot of memory and time to calculate multiplier. We optimize it with modulus multiply. <br/><br/>
+Left parts are integers. It means right parts are integers too. Now we will find integer variant (__0__ or __1__) and save the result. <br/><br/>
+Second step is to undestand how to find other bits. Now we will XOR number with __1(i-1 random bits)__ and __0(same i-1 random bits)__ to get results, which degrees differ only in i position and one result is ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7B2%5E%7Bi%7D%7D) times larger. (![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%20%282%5E%7B2%5E%7Bi%7D%7D%29%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-%282%5E%7B2%5E%7Bi%7D%7D%29*x_%7B0%7D%7D%7Bp%7D) and otherwise)<br/><br/>
+It takes a lot of memory and time to calculate multiplier. We've optimized this with modulus multiplying. <br/><br/>
 
-Our code to solve:
+Completed exploit:
 ```py
 #!/usr/bin/env python3
 from socket import socket
