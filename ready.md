@@ -17,12 +17,12 @@ First step is XORing with __0__ and __1__: <br/>
 If the last bit of __m__ is __0__, than ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B0%7D) = 1 + ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D), otherwise, 1 + ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B0%7D) = ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20m%20%5Coplus%20s_%7B1%7D) => <br/>
  => ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s_%7B0%7D%7D) = ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%20*%202%5E%7Bm%20%5Coplus%20s_%7B1%7D%7D) (__m__'s last bit is __0__) or ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7Bm%20%5Coplus%20s_%7B1%7D%7D) = ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%20*%202%5E%7Bm%20%5Coplus%20s_%7B0%7D%7D) (__m__'s last bit is __1__) <br/><br/>
 __0__)
-![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20X_%7B0%7D-k_%7B0%7D*p%20%3D%202%20*%20%28X_%7B1%7D-k_%7B1%7D*p%29) => ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20k_%7B0%7D-%202*k_%7B1%7D%3D%20%5Cfrac%7BX_%7B0%7D%20-%20X_%7B1%7D%7D%7Bp%7D) <br/>
+![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20X_%7B0%7D-k_%7B0%7D*p%20%3D%202%20*%20%28X_%7B1%7D-k_%7B1%7D*p%29) => ![equation](https://latex.codecogs.com/gif.latex?k_%7B0%7D%20-%202%20*%20k_%7B1%7D%20%3D%20%5Cfrac%7Bx_%7B0%7D-2*x_%7B1%7D%7D%7Bp%7D) <br/>
 __1__)
-![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20X_%7B1%7D-k_%7B1%7D*p%20%3D%202%20*%20%28X_%7B0%7D-k_%7B0%7D*p%29) => ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20k_%7B1%7D-%202*k_%7B0%7D%3D%20%5Cfrac%7BX_%7B1%7D%20-%20X_%7B0%7D%7D%7Bp%7D) <br/><br/>
+![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20X_%7B1%7D-k_%7B1%7D*p%20%3D%202%20*%20%28X_%7B0%7D-k_%7B0%7D*p%29) => ![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%202%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-2*x_%7B0%7D%7D%7Bp%7D) <br/><br/>
 
-Left parts are natural. It means, left are natural too. Now we will find natural variant (__0__ or __1__) and save result. <br/><br/>
-Second step is to undestand, how to find other bites. Now we will XOR with __1(i-1 random bits)__ and __0(same i-1 random bits)__ to became results, which degrees differ only in i position and one result is ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7B2%5E%7Bi-1%7D%7D) times larger. <br/><br/>
+Left parts are integers. It means, right are integers too. Now we will find natural variant (__0__ or __1__) and save result. <br/><br/>
+Second step is to undestand, how to find other bits. Now we will XOR with __1(i-1 random bits)__ and __0(same i-1 random bits)__ to get results, which degrees differ only in i position and one result is ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%202%5E%7B2%5E%7Bi-1%7D%7D) times larger. (![equation](https://latex.codecogs.com/gif.latex?k_%7B1%7D%20-%202%20*%20k_%7B0%7D%20%3D%20%5Cfrac%7Bx_%7B1%7D-%282%5E%7B2%5E%7Bi%7D%7D%29*x_%7B0%7D%7D%7Bp%7D) фтв щерукцшыу)<br/><br/>
 It takes a lot of memory and time to calculate multiplier. We optimize it with modulus multiply. <br/><br/>
 
 Our code to solve:
@@ -30,7 +30,7 @@ Our code to solve:
 #!/usr/bin/env python3
 from socket import socket
 
-p = <from task>
+p = 160634950613302858781995506902938412625377360249559915379491492274326359260806831823821711441204122060415286351711411013883400510041411782176467940678464161205204391247137689678794367049197824119717278923753940984084059450704378828123780678883777306239500480793044460796256306557893061457956479624163771194201
 E = 10e-8
 
 def calc(mul, x1, x2):
