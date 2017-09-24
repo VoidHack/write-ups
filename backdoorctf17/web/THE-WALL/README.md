@@ -1,4 +1,4 @@
-It is simple SQL-injection in username.
+It is simple SQL-injection in the username field.
 
 ```python
 import requests
