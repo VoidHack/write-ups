@@ -1,4 +1,4 @@
-Algo is very hard and works too long. It codes every pixel with 64-long hash and joins them into one string. 
+[Algo](encrypt.py) is very hard and works too long. It codes every pixel with 64-long hash and joins them into one string. 
 It means, that we can just split [encrypted data](encrypted.txt) to [bloks by 64 chars](encrypted_splited.txt). 
 There are just 17 different pixels there.
 
