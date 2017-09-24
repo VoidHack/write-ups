@@ -1,8 +1,8 @@
-[Algo](encrypt.py) is very hard and works too long. It codes every pixel with 64-long hash and joins them into one string. 
-It means, that we can just split [encrypted data](encrypted.txt) to [bloks by 64 chars](encrypted_splited.txt). 
-There are just 17 different pixels there.
+[Algorithm](encrypt.py) is very hard and works too long. It codes every pixel into 64 bytes long hash and joins them into the one string. 
+It means, that we can just split [encrypted data](encrypted.txt) into [blocks of 64 chars](encrypted_splited.txt). 
+After calculating we can see that there are just 17 different hashs (pixels) there.
 
-Now we can replace them by RGB-tuples and find right image size.
+Now we can replace them by RGB-tuples and find the right image size, knowing the number of pixels in the image.
 
 ```python
 from PIL import Image
