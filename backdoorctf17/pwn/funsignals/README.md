@@ -6,7 +6,7 @@ The task consists of one [64-bit binary](player_bin). Let's examine what's under
 
 First of all, look at the ```0x10000023``` address. Flag for this challenge is placed in this address on the CTF server. So, obviously that we should just print it. Okay, let's examine the code.
 
-There is not so much code and everything is pretty straight. In the first syscall at ```0x1000000``` we input string into ```rsi``` register. After that we prepare registers for the second syscall. If we look at the table of syscalls for [x86_64 architecture](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/) then we find out that this syscall is [```sys_rt_sigreturn```](https://linux.die.net/man/2/rt_sigreturn).
+There is not so much code and everything is pretty straight. In the first syscall at ```0x100000b``` we input string into ```rsi``` register. After that we prepare registers for the second syscall. If we look at the table of syscalls for [x86_64 architecture](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/) then we find out that this syscall is [```sys_rt_sigreturn```](https://linux.die.net/man/2/rt_sigreturn).
 
 For me this doesn't tell much, so let's run the binary and see what this thing do. I input ```'A' * 12``` and stopped before the second syscall. The state of our program looks like that:
 
