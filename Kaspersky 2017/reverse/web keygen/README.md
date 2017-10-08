@@ -97,7 +97,7 @@ def cracking(hash):
                       hash = nhash
 ```
 
-But this took too much time to compute started hash ```0xedcba987```. Because of that, we should understand how works program after this comparison.
+But this took too much time to compute started hash ```0xedcba987```. Because of that, we should understand how works program after comparison of hashed input and ```0x33e5ae40```.
 
 
 ### After comparison
