@@ -4,7 +4,7 @@ __Crypto 700__
 
 > Could your decrypt the message? http://95.85.51.183
 
-All we have is a web page asking for a name and setting some strange cookie (obiously, in base64).
+All we have is a web page asking for a name and setting some strange cookie (obviously, in base64).
 
 ![cooikie](./images/cookie.png)
 
