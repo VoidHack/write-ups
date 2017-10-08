@@ -1,8 +1,13 @@
-## decrypt the message
+# __Kaspersky Industrial CTF Quals 2017.__ 
+## __decrypt the message__
 
-__Crypto 700__
-
+## Information
+**Category:** Crypto
+**Points:** 700
+**Description:** 
 > Could your decrypt the message? http://95.85.51.183
+
+## Solution
 
 All we have is a web page asking for a name and setting some strange cookie (obviously, in base64).
 
