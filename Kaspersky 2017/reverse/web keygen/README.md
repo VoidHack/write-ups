@@ -94,7 +94,7 @@ def hash(input):
 
  ```
 
-All hex numbers is signed. ```blocks``` are statically generated list of signed numbers. So, hashing algorithm is not that hard. After all operation obtained, hash is compared with ```0x33e5ae40```. Knowing this, we can reverse algorithm in this way:
+All hex numbers is signed. ```blocks``` are statically generated list of signed numbers. So, hashing algorithm is not that hard. After all operations obtained, a hash is compared with ```0x33e5ae40```. Knowing this, we can reverse algorithm in this way:
 
 ```python
 alph = ascii_letters + digits
@@ -112,11 +112,11 @@ def cracking(hash):
                       hash = nhash
 ```
 
-But this took too much time to compute started hash ```0xedcba987```. Because of that, we should understand how works program after comparison of hashed input and ```0x33e5ae40```.
+But this took too much time to compute initial hash ```0xedcba987```. Because of that, we should understand how works program after comparison of hashed input and ```0x33e5ae40```.
 
 
 ### After comparison
-If hash of our input is equal to ```0x33e5ae40```, then program compute statically list of numbers. Further, all numbers are xored with input. Usual block cipher.
+If a hash of our input is equal to ```0x33e5ae40```, then program compute statically list of numbers. Further, all numbers are xored with input. Usual block cipher.
 ```
 | INPUT | INPUT | INPUT | ... |
 | LIST OF NUMBERS ....        |
