@@ -3,8 +3,11 @@
 
 ## Information
 **Category:** Reverse
+
 **Points:** 700
+
 **Description:** 
+
 > crackme! http://95.85.55.168/vmctf.html
 
 > Writeup author: **merrychap**
