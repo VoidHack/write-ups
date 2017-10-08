@@ -2,7 +2,6 @@
 ## _web keygen_
 
 ## Information
-## Information
 **Category:** Reverse
 **Points:** 700
 **Description:** 
