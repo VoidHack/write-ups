@@ -125,7 +125,8 @@ If hash of our input is equal to ```0x33e5ae40```, then program compute statical
 
 And in the end, program prints exactly ```RESULTING LIST OF NUMBERS``` joined in a string. We know the flag format. It is ```KLCTF....```. So, it all means that we can use the certain input that will give after xoring exactly "KLCTF". But it's just 5 bytes. We should use another 3. Let's just brute them. After we do it, we will get the right flag.
 
+
+<h4>VoidHack crew with love <3</h4>
 <p align="center">
-  With love, VoidHack crew
   <img src="screens/konata.png">
 </p>
