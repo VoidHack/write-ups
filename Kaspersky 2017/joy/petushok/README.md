@@ -13,6 +13,6 @@ We have [html page](ctfcoco.html) with table, that draws image using background 
 
 <p><img src="petushok.png"></p>
 
-Looking more closely on cell classes, we can see unused "Co" names.
+Looking more closely at cell classes, we can see unused "Co" names.
 
-Now we can make a [scrypt](solver.py), that removes all "CoCo\<x\>" styles and adds color to "Co" cells. Result page contains flag.
+Now we can make the [script](solver.py), that removes all "CoCo\<x\>" styles and adds color to "Co" cells. Result page contains flag.
