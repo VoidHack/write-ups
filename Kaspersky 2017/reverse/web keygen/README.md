@@ -72,7 +72,7 @@ After some time of reversing this code, we get [something like this](vm.js). I s
 Reversing the code we see what is going on:
  - The program waits for a string with 8-byte length.
  - Compute hash of this string
- - Compare obtained hash with ```0x33e5ae40```. If they are equal, then program prints another string, else printf "Fail".
+ - Compare obtained hash with ```0x33e5ae40```. If they are equal, then program prints another string (actually a flag), else printf "Fail".
 
 
 So, we should understand what type of a hashing is used here.
