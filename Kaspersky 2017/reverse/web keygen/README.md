@@ -125,6 +125,18 @@ If a hash of our input is equal to ```0x33e5ae40```, then program compute static
 
 And in the end, program prints exactly ```RESULTING LIST OF NUMBERS``` joined in a string. We know the flag format. It is ```KLCTF....```. So, it all means that we can use the certain input that will give after xoring exactly "KLCTF". But it's just 5 bytes. We should use another 3. Let's just brute them. After we do it, we will get the right flag.
 
+```python
+numbers = [115, 20, 32, 23, 2, 98, 42, 119, 121, 29, 33, 113, 112, 103, 94, 6, 0, 30, 91, 113, 125, 103, 95, 113, 123, 111, 80, 2, 119, 103, 90, 115, 9, 25, 39, 1, 5]
+password = '8XcCDUhG'
+
+index, flag = 0, ''
+for i, num in enumerate(numbers):
+    flag += chr(num ^ ord(password[i % 8]))
+print(flag)
+```
+
+> And we get the flag: **KLCTF7B0AEB2426A8F829276C73A32241ADBA**
+
 
 <h4>VoidHack crew with love <3</h4>
 <p align="center">
