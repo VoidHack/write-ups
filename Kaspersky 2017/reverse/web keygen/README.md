@@ -45,7 +45,7 @@ while (buffer.counter != 0xFFFFFFFF) {
 
 ```
 
-There is a while loop that compares ```buffer.counter``` with ```0xffffffff```. This ```buffer.counter``` looks exactly like IP register. And this ```a56()``` function seems like execute a command depending on the instruction number (big case statement).
+There is a while loop that compares ```buffer.counter``` with ```0xffffffff```. This ```buffer.counter``` looks exactly like IP register. And this ```a56()``` function executes a command depending on the instruction opcode (big case statement).
 
 Now, let's look at the ```BufferClass``` construction:
 
