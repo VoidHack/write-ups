@@ -94,7 +94,7 @@ def hash(input):
 
  ```
 
-All hex numbers is signed. ```blocks``` are statically generated list of signed numbers. So, hashing algorithm is not that hard. After all operations obtained, a hash is compared with ```0x33e5ae40```. Knowing this, we can reverse algorithm in this way:
+All hex numbers is signed. ```blocks``` are statically generated list of signed numbers. So, hashing algorithm is not that hard. After all operations are executed, a hash is compared with ```0x33e5ae40```. Knowing this, we can reverse algorithm in this way:
 
 ```python
 alph = ascii_letters + digits
@@ -112,7 +112,7 @@ def cracking(hash):
                       hash = nhash
 ```
 
-But this took too much time to compute initial hash ```0xedcba987```. Because of that, we should understand how works program after comparison of hashed input and ```0x33e5ae40```.
+But this took too much time to compute initial hash ```0xedcba987```. Because of that, we should understand how works program after comparison of input's hash and ```0x33e5ae40```.
 
 
 ### After comparison
@@ -123,7 +123,7 @@ If a hash of our input is equal to ```0x33e5ae40```, then program compute static
 | RESULTING LIST OF NUMBERS   |
 ```
 
-And in the end, program prints exactly ```RESULTING LIST OF NUMBERS``` joined in a string. We know the flag format. It is ```KLCTF....```. So, it all means that we can use the certain password that will give after xoring exactly "KLCTF". This password is ```8XcCD...``` But it's just 5 bytes. We should use another 3. Let's just brute them. After we do it, we will xor obtained password with numbers and will get the flag.
+And in the end, program prints exactly ```RESULTING LIST OF NUMBERS``` joined in a string. We know the flag format. It is ```KLCTF....```. So, it all means that we can use the certain password that will give us exactly "KLCTF" after xoring. This password is ```8XcCD...``` But it's just 5 bytes. We should use another 3. Let's just brute them. After we do it, we will xor obtained password with numbers and will get the flag.
 
 ```python
 numbers = [115, 20, 32, 23, 2, 98, 42, 119, 121, 29, 33, 113, 112, 103, 94, 6, 0, 30, 91, 113, 125, 103, 95, 113, 123, 111, 80, 2, 119, 103, 90, 115, 9, 25, 39, 1, 5]
