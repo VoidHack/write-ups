@@ -19,7 +19,7 @@ We are given the [link](http://95.85.55.168/vmctf.html) to the password validato
   <img src="screens/html.png">
 </p>
 
-It seems interesting. We can see ~~cocoded~~ obfuscated javascript code and function ```GetFlag``` where we input some string. First of all, let's replace all this ```CoCo``` with a more readable name like ```a[Number of Co]```. [The code is here](a_chnaged.js). It's already little changed, but still doesn't mean much. You can see how we tried to understand what this thing is, but ended up with nothing.
+It seems interesting. We can see ~~cocoded~~ obfuscated javascript code and function ```GetFlag``` where we input some string. First of all, let's replace all this ```CoCo``` with a more readable name like ```a[Number of Co]```. [The code is here](a_changed.js). It's already little changed, but still doesn't mean much. You can see how we tried to understand what this thing is, but ended up with nothing.
 
 ### Reversing the code
 Now, we can look at the name of the html. VMctf. Virtual Machine? Let's look at the code from this perspective.
