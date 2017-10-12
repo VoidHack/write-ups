@@ -1,0 +1,16 @@
+Agent,
+
+For your upcoming mission, you will need some tools to assist you.
+
+BGB is a robust Game Boy emulator and debugger. You can find the download link below. Depending on your platform, you may need to run it through Wine.
+http://bgb.bircd.org/
+
+Another recommended debugger and emulator is NO$GMB. You can find the link to install it below. Similarly, you may need to run it through Wine.
+http://problemkaputt.de/gmb.htm
+
+Another recommend tool for your arsenal is Radare2. Radare can be used to analyzing binaries, disassembling code, debugging programs, among its many various functions. Installation instructions can be found in the Github project.
+https://github.com/radare/radare2
+
+Best of luck.
+
+- Boss

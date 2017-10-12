@@ -1,0 +1,9 @@
+You're walking through the street after a long day of chasing your target—but with nothing in hand to show for your work. You stumble through the busy streets of Chinatown, lit by neon lights and filled with the lazy chatter of the crowd.
+
+The person ahead of you seems to be walking home with a steaming bag of Chinese takeout. A fortune cookie tumbles out of her bag. You reach down to return the cookie to its owner, but when you look up, your hungry target has disappeared into the crowd—probably rushing off to enjoy the dinner she had in hand.
+
+"Another target escaped... maybe I really am losing my touch," you scowl at your own perceived incompetence.
+
+You were taught to never waste any food, so you crack open the cookie and inside you find your fortune:
+
+____ are you lucky numbers.  FIXME

@@ -1,0 +1,17 @@
+You find yourself in a dark and quiet bar—you're not even sure how long you've been here. The digital alcohol distorts your perception of time like no other beverage you've experienced. Suspicion crosses your mind as you wonder how you could be getting drunk in a digital simulation, but another more pressing thought pushes its way through.
+
+This puzzle is still unsolved. Will all your troubles so far go to waste? You are left with no other choice than what you're about to do. You pull up your user space terminal—a holographic blue screen lights up the otherwise colorless bar. You slowly type in the command to start a call with the external world.
+
+"Boss speaking."
+
+You are simultaneously relieved and dreading to hear that voice.
+
+"Boss, I need help. I think this world is rigged—could this all just be a game someone is playing?"
+
+"No time to break the fourth wall Agent, I just received insider information from an anonymous informant. She didn't leave her name, but she did leave us some crucial information about your target. You're looking for a 16 digit code to open the door. She left me with the address 0x______." FIXME
+
+"More magic numbers! The last one barely did me any good."
+
+"It should be enough to see you through. I believe in you, Agent, and I know you won't disappoint."
+
+And with that, the line goes silent.
