@@ -169,5 +169,4 @@ And when we enter the last symbol we will get the flag!
 <p align="center">
   <img src="screens/flag.png">
 </p>
-
 > flag-SUP3R-S3CUR3_1
