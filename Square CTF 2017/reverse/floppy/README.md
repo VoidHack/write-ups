@@ -30,18 +30,18 @@ In the first place, we have to see the code of this MBR. Using IDA Pro we can se
 This function does the next:
 - 16 line: Prints "Challenge" with some random number
 - 19 line: Prints "Code?"
-- 21 — 35 lines: Inputs a string with 4 bytes length.
+- 21 — 35: Inputs a string with 4 bytes length.
 - 37 line: Translates the string into hex format (I'm not sure about this function, it isn't necessary for the solution)
 - 38 — 42: Generates 8 bytes and stores them in ```byte_1DB8```
-- Compares processed ```hex``` and result of ```sub_BA0``` function
-    - If the are equal, then prints the "flag" and then execute ```sub_510``` with ```byte_1DB8``` as the first argument.
+- 43 line: Compares processed ```hex``` and result of ```sub_BA0``` function
+    - If they are equal, then prints the "flag" and then execute ```sub_510``` with ```byte_1DB8``` as the first argument.
     - Else prints "Nope".
 
 There are two ways to solve this challenge:
 1. Understand how ```sub_BA0``` works and find appropriate input that will satisfy to the comparison
-2. Execute all instructions until comparison. After this, set ```eip``` to ```call sub_510```. Input in this case is useless, because doesn't take part in calculating the flag. So it will give us the flag without any effort.
+2. Execute all instructions until comparison. After this, set ```eip``` to ```call sub_510```. Input in this case is useless because doesn't take part in calculating the flag. So it will give us the flag without any effort.
 
-I chose the second variant because it's faster. This is where that comparison is in disassembly:
+I chose the second variant because it's faster. This is where that comparison located in disassembly:
 
 <p align="center">
   <img src="screens/cmp_asm.png">
@@ -73,7 +73,7 @@ Continue execution until the ```0x7c00``` address:
 </p>
 
 
-When everything is done, we have to find the address of the start function. She is shown below:
+When everything is done, we have to find the address of the start function. This functions is shown below:
 
 <p align="center">
   <img src="screens/start_func.png">
@@ -85,7 +85,7 @@ After some debugging steps, we find that the desired function is placed under ``
   <img src="screens/start_func_debug.png">
 </p>
 
-Okay, we are almost done! Now, let's calculate the offset of that last comparison from ```0x200``` (it's the address of start function in disassembly). Offset is ```0x217```, so let's set breakpoint at the ```0x1217``` and continue execution. Program waits for an input. We input random 4 bytes.
+Okay, we are almost done! Now, we have to calculate the offset of that last comparison from ```0x200``` (it's the address of start function in disassembly). Offset is ```0x217```, so let's set breakpoint at the ```0x1217``` and continue execution. Program waits for an input. We input random 4 bytes.
 
 <p align="center">
   <img src="screens/input.png">
