@@ -58,7 +58,7 @@ So, after this text, the program waits for our 16 symbols input. We can input th
 - box button
 - arrow button
 
-These are all Gameboy's controllers. So, after entering a sequence of symbols, the binary have to compare them with the correct sequence. It's obvious. Of course, it's not, because the binary can comapre hashes of sequences, but after completing I can say, that only sequences are compared.
+These are all Gameboy's controllers. So, after entering a sequence of symbols, the binary have to compare them with the correct sequence. It's obvious. Of course, it's not, because the binary can comapre hashes of sequences, but after completing the challenge I can say, that only sequences are compared.
 
 Anyway, let's input something:
 
@@ -125,11 +125,11 @@ Oops, IDA can't disassemble these bytes. But don't be sad because of it. We stil
 
 Now, we want to set the breakpoint at the ```0x338C``` address and see if this address is reachable from the code without any modifications. Let's run it. 
 
-[_Omitted screen of reached and. Sorry, I'm lazy. You will see it on the next screen, I promise!_]
+[_Omitted screen of the reached instruction. Sorry, I'm lazy. You will see it on the next screen, I promise!_]
 
 And yes, it's reachable. We are stepping in this function and see disassembled instructions (those IDA couldn't disassembly)
 
-After several instructions below, we can see interesting ```and (hl)```.
+After several instructions below, we can see interesting ```and (hl)``` at the ```0x2ADC``` address.
 
 ### Little information about ```and``` in z80
 ```and val``` — this is template for ```and``` instruction. It ands ```A``` register with ```val``` and then puts obtained value in the ```A``` register.
@@ -154,14 +154,16 @@ Yes, in the ```(hl)``` lays our transformed bytes one by one. One more loop:
   <img src="screens/3_and.png">
 </p>
 
-Okay, what do we have so far? This ```and``` ands bytes of transformed input and some bytes in ```A``` register. Bytes in ```A``` register correspond to the last table. It means, that our input checking takes place exactly in this instruction!
+Don't be confused because of unchangeable ```0x1``` in the ```(hl)```. Recall that we inputted the sequence ```🡆🡆🡆🡆🡆🡅🡅🡅🡅...```. See at the screen with this input above. So, transformed value of the ```🡆``` is exactly ```0x1```.
+
+Okay, what do we have so far? This ```and``` ands bytes of transformed input and some bytes in ```A``` register. Bytes in ```A``` register correspond to the last table. It means, that our input checking **takes place exactly in this instruction!**
 
 Next actions are obvious: Get all bytes from ```A``` register and input exactly this symbols. In the end, we will get the next:
 - In bytes: ```0x8 0x2 0x10 0x4 0x20 0x10 0x4 0x8 0x8 0x10 0x4 0x1 0x2 0x1 0x20 0x8```
 - In symbols: ```🡇🡄⌃🡅🢬⌃🡅🡇🡇⌃🡅🡆🡄🡆🢬🡇```
 
 <p align="center">
-  <img src="screens/inputted_code.png">
+  <img src="screens/code.png">
 </p>
 
 And when we enter the last symbol we will get the flag!
