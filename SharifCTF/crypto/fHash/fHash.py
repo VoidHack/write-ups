@@ -18,4 +18,3 @@ def fHash(hl, hr, M):
 
 if __name__ == '__main__':
     print(fHash('7575', 'A8A8', '7368617269666374'))
-    print(fHash('9e4f', '0215', '3aac617269666374'))
