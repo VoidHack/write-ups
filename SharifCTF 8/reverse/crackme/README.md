@@ -18,7 +18,7 @@ Okay, we have the [binary](./crackme). Let's see what is going on under the hood
 </p>
 
 ### xmm obfuscation
-Assembly code contains many operations with [```xmm```](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) registers (operations on several floating point/packed values).
+Assembly code contains many operations with [```xmm```](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) registers (they used in operations on several floating point/packed values).
 
 <p align="center">
   <img src="screens/xmm_obfuscation.png">
@@ -63,7 +63,7 @@ Here we change 2 bytes of our xored password:
 [...]
     mov [edx+eax], cl
 [...]
-    mov [eax+ecx], al
+    mov [edx+ecx], al
 [...]
 ```
 
