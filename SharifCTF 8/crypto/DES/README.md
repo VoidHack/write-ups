@@ -22,5 +22,5 @@ There are just 2 interesting lines in (known_plaintexts.txt)[known_plaintexts.tx
 
 > f084cae61e607b05 -> ef17ae3946ebae4c
 
-Like [img](images/img.png). It means, that K is [weak](https://en.wikipedia.org/wiki/Weak_key#Weak_keys_in_DES).
+Like ![img](images/img.jpg). It means, that K is [weak](https://en.wikipedia.org/wiki/Weak_key#Weak_keys_in_DES).
 There are just 4 weak keys in DES. One of them is our answer.
