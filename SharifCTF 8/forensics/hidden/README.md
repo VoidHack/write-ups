@@ -36,4 +36,16 @@ So, can you see the difference? Yes, these four processes:
 
 <p><img src='images/difference.png' /></p>
 
-As you see, half of them was closed, and we need to submit one PIDs. It's time to guess..
+As you see, half of them was closed, and we need to submit one PIDs. It's time to guess...
+
+```
+C:\Users\Vova\Desktop\SharifCTF8> python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from hashlib import md5
+>>> md5(b'404').hexdigest()
+'4f4adcbf8c6f66dcfc8a3282ac2bf10a'
+>>> md5(b'688').hexdigest()
+'f79921bbae40a577928b76d2fc3edc2a'
+>>>
+```
