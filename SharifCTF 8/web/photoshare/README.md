@@ -1,10 +1,13 @@
 # Photoshare (250 PTS)
 ### Description
 
-    Photoshare is an internet based photo sharing service. Login to this website as admin.
-    web: ctf.sharif.edu:8084
-    username: jack
-    password: Year and month of Jack's birthday.
+>Photoshare is an internet based photo sharing service. Login to this website as admin.
+>
+>web: ctf.sharif.edu:8084
+>
+>username: jack
+>
+>password: Year and month of Jack's birthday.
 
 >Hint:No need for XSS or bypassing the uploader.
 
