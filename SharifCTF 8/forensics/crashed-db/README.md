@@ -33,12 +33,12 @@ C:\Users\Vova\Desktop\SharifCTF8>
 ```
 
 Now we've got two files. Let's look at our temp.db:
-<img src='images/temp-db.png' />
+<p><img src='images/temp-db.png' /></p>
 And then at original db:
-<img src='images/original-db.png' />
+<p><img src='images/original-db.png' /></p>
 
 Have you see the same byte? Right, what if just paste bytes before that byte in our database?
-<img src='images/updated-header.png' />
+<p><img src='images/updated-header.png' /></p>
 That is, then save it as updated.db and try to open it now:
 ```
 C:\Users\Vova\Desktop\SharifCTF8> sqlite3.exe updated.db
@@ -61,9 +61,9 @@ Error: database disk image is malformed
 sqlite>
 ```
 Oh no, that's invalid! Sorry, but we need to look at format specification.
-<img src='images/specification.png' />
+<p><img src='images/specification.png' /></p>
 We're interested in two things: page size and database size (in pages). Size of original db0.db is 8 KB, our page size is 0x1000 = 4096 B... Yeah, 2 pages! Change it:
-<img src='images/changed-bytes.png' />
+<p><img src='images/changed-bytes.png' /></p>
 Now we finally can extract the flag:
 ```
 C:\Users\Vova\Desktop\SharifCTF8> sqlite3.exe updated.db
