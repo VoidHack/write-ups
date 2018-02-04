@@ -22,12 +22,12 @@ Yes, this is a file hosting, where we can download the file called ```file```.
 So, how can we open it? Try to use binwalk:
 
 ```
-C:\Users\Vova\Desktop\SharifCTF8\> echo import binwalk; binwalk.scan('-B', 'file') | python
+C:\Users\Vova\Desktop\SharifCTF8> echo import binwalk; binwalk.scan('-B', 'file') | python
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
 100           0x64            Zlib compressed data, default compression
 
-C:\Users\Vova\Desktop\SharifCTF8\>
+C:\Users\Vova\Desktop\SharifCTF8>
 ```
 
 Um, zlib? Not from 0x00? It's strange, we need look INSIDE that file.
