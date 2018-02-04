@@ -44,7 +44,11 @@ That's all binary. The most interesting function here is ```copy_it``` function.
 
 
 ### Finding the vulnerability
-Taking into account that we input 200 characters in ```s1```, then it's obvious that here is an easy buffer overflow. Alright, we can overflow ```RET``` of ```copy_it``` function, but what should we do next? How do we get shell? 
+```asm
+sub     esp, 18h
+sub     esp, 8
+```
+Taking into account that we input 200 characters in ```s1```, then it's obvious that here is an easy buffer overflow. Alright, we can overflow ```RET``` of ```copy_it``` function, but what should we do next? How do we get the shell? 
 
 ### Exploitation of the binary
 The idea is to make **```ret2libc```** attack. To make this, we have to leak a libc address. If we change the flow of the binary after overwriting ```RET``` into first ```puts``` function, making address of GOT as an argument for this ```puts```, then we leak a libc address. Pretty.
