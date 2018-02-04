@@ -43,7 +43,7 @@ Now we've got two files. Let's look at our temp.db:
 And then at original db:
 <p><img src='images/original-db.png' /></p>
 
-Have you see the same byte? Right, what if just paste bytes before that byte in our database?
+Have you see the same byte? Right, what if we just paste bytes from our database to original?
 <p><img src='images/updated-header.png' /></p>
 That is, then save it as updated.db and try to open it now:
 
@@ -70,7 +70,7 @@ Error: database disk image is malformed
 sqlite>
 ```
 
-Oh no, that's invalid! Sorry, but we need to look at format specification.
+Oh no, it's invalid! Sorry, but we need to look at format specification.
 <p><img src='images/specification.png' /></p>
 We're interested in two things: page size and database size (in pages). Size of original db0.db is 8 KB, our page size is 0x1000 = 4096 B, so... Yes, two pages! Change it:
 <p><img src='images/changed-bytes.png' /></p>
