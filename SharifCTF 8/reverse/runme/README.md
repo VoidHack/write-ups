@@ -46,7 +46,7 @@ So, right now our subsystem is for device driver. But our binary shows a window 
   <img src="screens/success.jpg">
 </p>
 
-### Flag
+## Flag
 The last one is to take md5 hash:
 
 > SharifCTF{FA77D55C1D9BDE713E868606AC58D861}
