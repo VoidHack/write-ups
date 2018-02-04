@@ -16,7 +16,7 @@ After extracting the archive we can see a lot of strange folders, but I'll give 
 
 <p><img src='images/message.png' /></p>
 
-What a luck! There's a message contains ```flag``` right in its subject! Look below, you see a link, didn't you?
+What a luck! There's a message containing ```flag``` right in its subject! Look below, you see a link, didn't you?
 Yes, this is a file hosting, where we can download the file called ```flag```.
 
 So, how can we open it? Try to use binwalk:
