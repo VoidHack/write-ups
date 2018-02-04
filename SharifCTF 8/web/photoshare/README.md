@@ -1,10 +1,10 @@
 # Photoshare (250 PTS)
 ### Description
 
->Photoshare is an internet based photo sharing service. Login to this website as admin.
->web: ctf.sharif.edu:8084
->username: jack
->password: Year and month of Jack's birthday.
+    Photoshare is an internet based photo sharing service. Login to this website as admin.
+    web: ctf.sharif.edu:8084
+    username: jack
+    password: Year and month of Jack's birthday.
 
 >Hint:No need for XSS or bypassing the uploader.
 
@@ -14,7 +14,7 @@ Flag: ```SharifCTF{kmvfwmj6sea7get9wggu249ehjc8hmdd}```
 
 <p><img src='images/welcome.png' /></p>
 
-Website welcomes us with a login form. Username is known from the descripton (```jack```), password mask is ```YYYYMM``` (also from the description), secret question is pretty simple. So we need to investigate a html code and write a bruteforcer.
+Website welcomes us with a login form. Username is known from the description (```jack```), password mask is ```YYYYMM``` (also from the description), secret question is pretty simple. So we need to investigate a html code and write a bruteforcer.
 
 <p><img src='images/html.png' /></p>
 
@@ -32,8 +32,6 @@ def get_hidden(url):
     field = re.search('name="field" value="(\w+)"', html)[1]
     token = re.search('name="_token" value="(\w+)">', html)[1]
     return response.cookies, answer, field, token
-    
-...
 
 def get_passwords():
     for year in range(1900, 2019):
