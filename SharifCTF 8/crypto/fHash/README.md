@@ -19,6 +19,6 @@ As we can see, [algo](fHash.py) splits M1 into 4 blocks.
 We don't need to search values for all 4 iterations. Only for first. 
 
 Now our task in searching new `hl_, hr_, m` that gives same value at first iteration, as initial `hl, hr, M1[:4]`.
-It's easy to use [bruteforce](solver.py) here, because we just need to get same `md5(hr_+m)[:4]`, not full collision.
+It's easy to use [random bruteforce](solver.py) here, because we just need to get same `md5(hr_+m)[:4]`, not full collision.
 Then we can brute `hl_` and get new values for old hash: `hl_, hr_, m+M1[4:]`
 
