@@ -109,7 +109,11 @@ if __name__ == '__main__':
     main()
 ```
 
-### And this is subtitle
-Text under the subtitle
+### Flag
 
+<p align="center">
+  <img src="screens/flag.png">
+</p>
+
+So, the flag is:
 > SharifCTF{7af9dab81dff481772609b97492d6899}
