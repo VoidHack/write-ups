@@ -1,5 +1,5 @@
 # Client01 (75 PTS)
-### Desription
+### Description
 >Attached file is the homepage of the client01. He knows the flag.
 
 Flag: ```SharifCTF{43215f0c5e005d4e557ddfe3f2e57df0}```
