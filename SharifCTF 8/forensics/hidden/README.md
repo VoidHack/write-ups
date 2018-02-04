@@ -32,11 +32,11 @@ Now we should find a difference between two files. ```fc``` won't help there cau
 
 <p><img src='images/psscan.png' /></p>
 
-So, can you see the difference? Yes, these four processes:
+So, can you see the difference? Yes, these three processes:
 
 <p><img src='images/difference.png' /></p>
 
-As you see, half of them was closed, and we need to submit one PIDs. It's time to guess...
+As you see, two of them was closed, and we need to submit the last PID.
 
 ```
 C:\Users\Vova\Desktop\SharifCTF8> python
@@ -45,7 +45,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> from hashlib import md5
 >>> md5(b'404').hexdigest()
 '4f4adcbf8c6f66dcfc8a3282ac2bf10a'
->>> md5(b'688').hexdigest()
-'f79921bbae40a577928b76d2fc3edc2a'
 >>>
 ```
