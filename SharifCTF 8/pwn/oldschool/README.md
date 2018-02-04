@@ -112,4 +112,4 @@ if __name__ == '__main__':
 ### And this is subtitle
 Text under the subtitle
 
-> Flag here
+> SharifCTF{7af9dab81dff481772609b97492d6899}
