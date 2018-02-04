@@ -53,7 +53,7 @@ Taking into account that we input 200 characters in ```s1```, then it's obvious 
 ### Exploitation of the binary
 The idea is to make **```ret2libc```** attack. To make this, we have to leak a libc address. If we change the flow of the binary after overwriting ```RET``` into first ```puts``` function, making address of GOT as an argument for this ```puts```, then we leak a libc address. Pretty.
 
-This overwriting gives us a chance to input characters one more time. Knowing libc address and the fact that argument for ```fgets``` lays right before ```RET``` address of ```copy_it``` (just debug and you will see it), then we can write into GOT entry.
+This overwriting gives us a chance to input characters one more time. Knowing libc address and the fact that argument for ```fgets``` lays right before ```RET``` address of ```copy_it``` on a stack (just debug and you will see it), then we can write into GOT entry.
 
 Let's write address of calculated ```system``` into ```puts``` entry in GOT, then the last ```puts``` will give us the shell.
 
