@@ -20,7 +20,7 @@ It looks like a recon task, so... Google is our assistant.
 Great! But I don't know what language is it, so maybe Google also knows a translation?
 
 ```
-مريم ميرزاخاني و همسرش --> Maryam Mirzakhani and her husband
+Maryam Mirzakhani and her husband
 ```
 
 He actually knows! (not expected huh?)
