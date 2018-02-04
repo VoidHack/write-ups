@@ -72,7 +72,7 @@ sqlite>
 
 Oh no, that's invalid! Sorry, but we need to look at format specification.
 <p><img src='images/specification.png' /></p>
-We're interested in two things: page size and database size (in pages). Size of original db0.db is 8 KB, our page size is 0x1000 = 4096 B... Yeah, 2 pages! Change it:
+We're interested in two things: page size and database size (in pages). Size of original db0.db is 8 KB, our page size is 0x1000 = 4096 B, so... Yes, two pages! Change it:
 <p><img src='images/changed-bytes.png' /></p>
 Now we finally can extract the flag:
 
