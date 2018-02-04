@@ -24,6 +24,7 @@ Maryam Mirzakhani and her husband
 ```
 
 He actually knows! (not expected huh?)
+
 It's time for Wikipedia now. What does it say?
 
 #### Awards and honors:
@@ -48,6 +49,7 @@ It's time for Wikipedia now. What does it say?
 - Elected to the American Academy of Arts and Sciences in 2017
 
 You can try it all or just pick ```Fields Medal 2014``` ;)
+
 So, according on description we can construct the flag!
 
 ```
