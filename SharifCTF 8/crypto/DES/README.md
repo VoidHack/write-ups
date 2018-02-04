@@ -17,7 +17,7 @@ where K is a 64-bit hexadecimal value, without the 0x prefix. (K includes the pa
 
 ## Solution
 
-There are just 2 interesting lines in (known_plaintexts.txt)[known_plaintexts.txt]:
+There are just 2 interesting lines in [known_plaintexts.txt](known_plaintexts.txt):
 > ef17ae3946ebae4c -> f084cae61e607b05
 
 > f084cae61e607b05 -> ef17ae3946ebae4c
