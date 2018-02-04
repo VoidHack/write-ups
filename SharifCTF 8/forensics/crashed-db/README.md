@@ -1,5 +1,5 @@
 # Crashed DB (50 PTS)
-### Desription
+### Description
 >We lost some data when we were delivering our DB.
 >Can you recover it??
 
