@@ -81,7 +81,7 @@ After xoring, we can see the next blocks of the code:
   <img src="screens/add_last_flag.png">
 </p>
 
-As you can see from the pictures above, this code does something like this:
+If you don't know x86 assembly (or lazy), then use IDA's Hex-Rays to understand that this code does the following:
 ```c
 password[2] += is_debugger
 password[3] += is_not_window_mode
