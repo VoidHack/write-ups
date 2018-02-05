@@ -53,9 +53,9 @@ There are several marks that will make an effect on some bytes of the flag. They
 </p>
 
 These marks are:
-- ```is_debugger_```. If we use a debugger, then it's ```1```, else ```0```.
+- ```is_debugger```. If we use a debugger, then it's ```1```, else ```0```.
 - ```is_not_window_mode```. If we run an application not in window mode (double click on the icon :D), then it's ```1```, else ```0```
-- ```some_flag```. This mark changes in some parts of the code.
+- ```some_flag```. This mark is changed in some parts of the code.
 
 We will tell about the effect of this marks on the password a little bit later.
 
