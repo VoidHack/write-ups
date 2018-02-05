@@ -33,7 +33,7 @@ First of all, we are faced with verification of debugger if we use a debugger.
   <img src="screens/idaq_check.png">
 </p>
 
-In a moment of debugging, ```ollydbg``` (_I'm sorry for a confusing name!_) actually contains the name of a debugger (in out case it's ```OLLYDBG``` or ```idaq.exe```). After reversing ```some_check``` function we can see that required debugger is ```idaq.exe```.
+In a moment of debugging, ```ollydbg``` (_I'm sorry for a confusing name!_) actually contains the name of a debugger (in out case it's ```OLLYDBG``` or ```idaq.exe```). After reversing ```some_check``` function we can see the next: If we use a debugger, then it has to be ```idaq.exe```.
 
 On my OS only ollydbg is available (for debugging PE executables), so I just patched this check to always return True.
 
