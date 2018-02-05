@@ -41,6 +41,24 @@ After this, we want to understand two things:
 - How our input will be changed further and where it will be changed.
 - How input's validation looks like and where it's placed.
 
+### Several marks
+There are several marks that will make an effect on some bytes of the flag. They are created in the beginning of the program:
+
+<p align="center">
+  <img src="screens/create_first_flags.png">
+</p>
+
+<p align="center">
+  <img src="screens/last_flag.png">
+</p>
+
+These marks are:
+- ```is_debugger_```. If we use a debugger, then it's ```1```, else ```0```.
+- ```is_not_window_mode```. If we run an application not in window mode (double click on the icon :D), then it's ```1```, else ```0```
+- ```some_flag```. This mark changes in some parts of the code.
+
+We will tell about the effect of this marks on the password a little bit later.
+
 ### Password is xored
 If we pass debugger check, then we will be faced with ```flag maybe here:``` string. So, this part of the program is desirable for us. Skipping all xmm obfuscation we can find interesting place:
 
@@ -52,34 +70,22 @@ What is going on here? Actually, in ```some_magic``` function we blockwise xor o
 
 After xor we change several bytes in a password (only 2 bytes).
 
-### The first change
+### Effect of the marks
+After xoring, we can see the next blocks of the code:
 
 <p align="center">
-  <img src="screens/change_2nd_byte.png">
+  <img src="screens/add_flags.png">
 </p>
 
-Here we change 2 bytes of our xored password:
-```asm
-[...]
-    mov [edx+eax], cl
-[...]
-    mov [edx+ecx], al
-[...]
-```
-
-As I noticed, bytes in ```[ebp+var_C9]``` and ```[ebp+var_CA]``` differs on different downloads of binary (I can be wrong here, so tell me if I'm wrong). So, it's like a kind of anti-cheat system. Be attentive in this part.
-
-### The second change
 <p align="center">
-  <img src="screens/change_3d_byte.png">
+  <img src="screens/add_last_flag.png">
 </p>
 
-And this is the same change as I mentioned above. The offset for changing the byte is placed in ```[ebp+var_C4]```. The change itself is:
-
-```asm
-[...]
-    mov [ecx+eax], dl
-[...]
+As you can see from the pictures above, this code does something like this:
+```c
+password[2] += is_debugger
+password[3] += is_not_window_mode
+password[4] += some_flag
 ```
 
 ### Password validation
@@ -87,12 +93,10 @@ And this is the same change as I mentioned above. The offset for changing the by
   <img src="screens/final_check.png">
 </p>
 
-After all changes with our password are done, it compares with ```whynxt``` string. If they are equal, then it sets ```eax``` register to 0 and saves result in ```[ebp+is_everything_alright]```. After this, we store obtained result in ```ecx``` and send it to ```final_check``` function. If ```ecx``` is 0, then we are faced with the next:
+After all changes with our password are done, it compares with ```whynxt``` string. If they are equal, then it sets ```eax``` register to 0 and saves result in ```[ebp+is_everything_alright]```. After this, we store obtained result in ```ecx``` and send it to ```final_check``` function. If ```ecx``` is 0, then we are faced with the message ```Correct:Flag is Md5 Of the password```.
 
-<p align="center">
-  <img src="screens/answer.png">
-</p>
+So, it seems like we have to make all marks above (is_debugger, window_mode, some_flag) equal to ```0```, because in other cases we will be faced with ```Try again``` message at normal launch (without debugger, in window mode, etc). After spending some time, we get the password: ```CZJYJG```.
 
 ### Flag
 
-> SharifCTF{609b1281417bab0d3612786137a5c70e}
+> SharifCTF{2bc98b4ebc8d75050d162a45b82df6ae}
