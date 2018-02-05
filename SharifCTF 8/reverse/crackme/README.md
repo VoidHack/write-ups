@@ -60,7 +60,7 @@ These marks are:
 We will tell about the effect of this marks on the password a little bit later.
 
 ### Password is xored
-If we pass debugger check, then we will be faced with ```flag maybe here:``` string. So, this part of the program is desirable for us. Skipping all xmm obfuscation we can find interesting place:
+If we pass debugger check, then we will be faced with ```flag maybe here:``` string. In this part of the code ```some_flag``` is changed in the bad way for us (further we will say, that we can't use a debugger at all). After we get into the desired part of the code. Skipping all xmm obfuscation we can find interesting place:
 
 <p align="center">
   <img src="screens/xor.png">
