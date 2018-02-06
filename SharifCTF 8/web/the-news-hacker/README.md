@@ -72,7 +72,7 @@ And there is ```organizer's``` password: ```password```! Weak, isn't it? So let'
 
 <p><img src='images/admin.png' /></p>
 
-As you see, nothing interesting here. Just save the cookie end go away...
+As you see, nothing interesting here. Just save the cookie and go away...
 
 ```
 wordpress_eb2a34d2fb7f6ae7debb807cd7821561=organizer%7C1518053697%7C3Uy0RvkQYc2RtBB4Vlg2kDdWNg8eC6fUF6Qq1TNS4tc%7C3fe61137ca73062fd44852ef55a17cb2d89a05f4227ecb2bc807db867e528355
