@@ -1,7 +1,6 @@
-# Sharif CTF 8
-## Keygen
+# Sharif CTF 8 - Keygen
 
-### Information
+## Information
 **Category:** | **Points:** | **Writeup Author**
 --- | --- | ---
 Reverse | 200 | AlexZ
@@ -9,7 +8,7 @@ Reverse | 200 | AlexZ
 
 > Find the password if you can!
 
-[Binary](./findpassword)
+[Binary](./findpass)
 
 ## Solution
 We have exe file which asks us for a password.
@@ -58,6 +57,7 @@ on the console. So, our task is to find the input which leads `result` to be 1.
 
 ### check_flags
 There are only two xrefs to `result`, both from `main`.
+
 ![result xrefs](./images/result_xrefs.png)
 
 First unconditionally sets it to 1. Second happens later in for loop: if the k-th item of global `int[5]` array at .data:00456414 (`check_flags` later) equals 0, then `result` becomes 0:
@@ -67,7 +67,9 @@ First unconditionally sets it to 1. Second happens later in for loop: if the k-t
 .text:0040818D                 mov     [ebp+result], 0
 ```
 Ok, now we need to have all `check_flags[i]` to be 1. Let's see xrefs to `check_flags`:
+
 ![check_flags xrefs](./images/check_flag_xrefs.png)
+
 There are references from `main` function and from 5 other functions (`check0` ... `check4`) which are _almost_ identical. Every function:
 - takes one argument (as we can see in debugger, it is one part of space-splitted user input)
 - inits some local array
