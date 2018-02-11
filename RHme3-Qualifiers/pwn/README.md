@@ -1,0 +1,1 @@
+We have [64-bit binary](main.elf). Let's see what this thing does, using IDA Pro

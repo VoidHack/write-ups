@@ -18,7 +18,7 @@ On the page we can find a binary and text, that says:
 
 >You can send up to 6 bytes (hex encoded) as the first argument to the binary. The passed in bytes will be executed. The goal is to read the contents of the file in env['WUNTEE_CHALLENGE_FLAG'].
 
-Okay then, the first we have to do is to download the [binary](6byte) and examine what it does. Using ```file``` utility we see that it's 32-bit binary:
+Okay then, the first we have to do is to download the [binary](6byte) and examine its functionality. Using ```file``` utility we see that it's 32-bit binary:
 
 <p align="center">
   <img src="screens/file.png">
@@ -68,7 +68,7 @@ Once you are at the ```jmp``` instruction, step in and see what do we have there
   <img src="screens/bytes.png">
 </p>
 
-This is where the real task begins. Let's recall what do we have right now. The flag is located in our memory and we can see it. Also, we can control 6 executable bytes. So, the simplest (and the only one) idea is next: we use ```write``` syscall to write the flag into the output stream.
+This is where the real task begins. Let's recall that we have right now. The flag is located in our memory and we can see it. Also, we can control 6 executable bytes. So, the simplest (and the only one) idea is next: we use ```write``` syscall to write the flag into the output stream.
 
 Let's examine the registers for that: ```eax = 0x4; ebx = 0x1; edx = 0x5```. It means that we will write to the stdout 5 bytes of a buffer stored in the ```ecx```. But ecx stores something useless! Yes, this is why we need this 6 bytes of our input. You can notice that ```edi``` contains flag address, so the goal is to move this address to ```ecx```. We can input ```lea ecx, [edi]; syscall;``` (in bytes it's ```8d0fcd80```)assembly instruction to output first 5 bytes of the flag.
 

@@ -2,15 +2,13 @@
 ## _web keygen_
 
 ## Information
-**Category:** Reverse
-
-**Points:** 700
+**Category:** | **Points:** | **Writeup Author**
+--- | --- | ---
+Reverse | 700 | merrychap
 
 **Description:** 
 
 > crackme! http://95.85.55.168/vmctf.html
-
-> Writeup author: **merrychap**
 
 ## Solution
 We are given the [link](http://95.85.55.168/vmctf.html) to the password validator. Let's see the HTML code:
