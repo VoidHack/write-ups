@@ -13,7 +13,7 @@ Exploitation | 200 | merrychap
 
 ## Solution
 
-Alright, we're given the [flea_attack](./flea_attack) binary.
+Alright, we're given the [flea_attack](./flea_attack.elf) binary.
 
 ```sh
 $ file flea_attack.elf
