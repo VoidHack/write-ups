@@ -1,7 +1,7 @@
 from itertools import product
 
 
-k = [225,119,99,38,224,124,111,86,243,198,81,149,107,122,117,171,171,237]
+k = [65,26,249,66,19,176,45,131,218,169,186,255,226,141,104,190,248,189,1,207,212,51,62,16,182,126,114,19,234]
 
 
 L = [0xf1, 0xef, 0x29, 0xbe, 0xb8, 0xf6, 0x4f, 0xaf, 0xb2, 0x92, 0xe3, 0xfc, 0xc6, 0x72, 0x48, 0xc3,
@@ -72,9 +72,8 @@ if __name__ == "__main__":
     generator = next_numbers_generator()
     step = filter_tupples(generator, k[0])
     for i in range(1,len(k)):
-        print("Step:{}".format(i))
-        step = list(filter_tupples(make_next_from_prev(step, True), k[i]))
-    path = get_path(step[0])
+        step = filter_tupples(make_next_from_prev(step, True), k[i])
+    path = get_path(list(step)[0])
     a,b,c = '','',''
     for x in path[:-1]:
         a += x[1][0]
