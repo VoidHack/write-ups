@@ -13,15 +13,15 @@ Crypto | 200 | MiKHalyCH
 [task.py](task.py) [signatures](signatures)
 
 ## Solution
-The code says that out algo is DSA-LCG. I've found best attack explanation at this [pdf](info.pdf)([link](https://link.springer.com/content/pdf/10.1007%2FBFb0052242.pdf)) 
+The code says that our algo is DSA-LCG. I've found best attack explanation at this [pdf](info.pdf)([link](https://link.springer.com/content/pdf/10.1007%2FBFb0052242.pdf)) 
 
 To find `x` and `k1` we need to solve system of equations:
 <p align="center">
   <img src="images/system.png">
 </p>
 
-It's complicated when `q != M`. But in our task (SURPRISE!!!) `q == M`. That makes our challange much easier!
-All we need is solve sustem in `GM(q)`.
+It's complicated if `q != M`. But in our task (SURPRISE!!!) `q == M`. That makes our challange much easier!
+All we need is too solve system in `GM(q)`.
 
 <p align="center">
   <img src="images/steps.png">
