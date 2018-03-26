@@ -3,7 +3,7 @@
 from __future__ import print_function
 import sys
 import os
-# from secret import flag
+from secret import flag
 
 
 """
@@ -38,9 +38,11 @@ class Generator:
         self.state = state
 
     def next_state(self, idxs):
+        self.idxs = idxs
         y = 0
-        for i in idxs:
+        for i in self.idxs:
             y ^= self.state[i]
+        out = self.state[31]
         for i in range(31, 0, -1):
             self.state[i] = self.state[i - 1]
         self.state[0] = y
@@ -70,16 +72,16 @@ if __name__ == '__main__':
          0xb5, 0x93, 0x8e, 0x55, 0xec, 0x8d, 0xf2, 0x6d, 0x9c, 0xa7, 0xad, 0x00, 0x08, 0xf0, 0xe6, 0x6b, 
          0x7a, 0xcd, 0xfb, 0x80, 0x0a, 0x83, 0x27, 0x39, 0x30, 0x06, 0x76, 0x90, 0x94, 0x35, 0x54, 0x04, 
          0x0f, 0xc1, 0x5b, 0x99, 0x11, 0x40, 0x5a, 0xd4, 0xe2, 0x95, 0x3f, 0x22, 0x7d, 0x24, 0x1d, 0xdb]
-    X =  [0,          4, 5,       8, 9, 10,         13,     15,     17, 18,                                 27,             31]
-    A0 = [0, 1,    3, 4,    6, 7,    9, 10, 11,             15,                     21, 22,         25,                     31]
-    A1 = [0, 1,             6, 7, 8, 9, 10,     12,             16,                 21, 22, 23, 24, 25, 26,                 31]
-    B =  [0,    2,       5,                             14, 15,             19, 20,                                     30, 31]
+    X = [0, 4, 5, 8, 9, 10, 13, 15, 17, 18, 27, 31]
+    A0 = [0, 1, 3, 4, 6, 7, 9, 10, 11, 15, 21, 22, 25, 31]
+    A1 = [0, 1, 6, 7, 8, 9, 10, 12, 16, 21, 22, 23, 24, 25, 26, 31]
+    B = [0, 2, 5, 14, 15, 19, 20, 30, 31]
     range_max = 256
-    print(list(map(len,[X, A0, A1, B])))
+
     # initialize generators
-    # RX = Generator(map(int, list(bin(int(os.urandom(4).encode('hex'), 16))[2:].zfill(32))))
-    # RA = Generator(map(int, list(bin(int(os.urandom(4).encode('hex'), 16))[2:].zfill(32))))
-    # RB = Generator(map(int, list(bin(int(os.urandom(4).encode('hex'), 16))[2:].zfill(32))))
+    RX = Generator(map(int, list(bin(int(os.urandom(4).encode('hex'), 16))[2:].zfill(32))))
+    RA = Generator(map(int, list(bin(int(os.urandom(4).encode('hex'), 16))[2:].zfill(32))))
+    RB = Generator(map(int, list(bin(int(os.urandom(4).encode('hex'), 16))[2:].zfill(32))))
 
     # the honest casino
     try:
@@ -91,15 +93,12 @@ if __name__ == '__main__':
                 RA.next_state(A0)
             else:
                 RA.next_state(A1)
-
-            RB.next_state(B)
-            if RX.state[26] == 1:
+            if RX.state[26] == 0:
                 RB.next_state(B)
-
+            else:
+                RB.next_state(B)
+                RB.next_state(B)
             true_number = (H(RX.state) + L[H(RA.state)] + L[H(RB.state)]) % 256
-            print(RX.state)
-            print(RA.state)
-            print(RB.state)
             send_message('Guess a number in range [0, {0}):'.format(range_max))
             guessed_number = int(read_message().strip())
             if not 0 <= guessed_number < range_max:
