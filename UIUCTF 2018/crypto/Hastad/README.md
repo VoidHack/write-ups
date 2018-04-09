@@ -10,7 +10,6 @@ Crypto | 200 | MiKHalyCH
 
 > sorry wrong chat
 <br>e = 3 btw
-<br>
 <br>[ciphertexts.txt](ciphertexts.txt)  [moduli.txt](moduli.txt)
 
 ## Solution
