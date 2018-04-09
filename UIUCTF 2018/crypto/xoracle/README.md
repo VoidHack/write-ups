@@ -46,6 +46,7 @@ ___
 Inside archive it's half-broken [f.bmp](f.bmp) with flag. After some tries to send the flag task was done! 
 <br>
 <br>
-Full solver is [here](solver.py)
-___
+
+Full solver is [here](solver.py).
+_____ 
 *Thanks to Matt Dyas for this awesome task!*
