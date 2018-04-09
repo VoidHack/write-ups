@@ -1,5 +1,5 @@
 ## TL;DR
-This is about exploiting heap as data structure. Negative size of elements on heap allows to overwrite size itself to point somewhere above. It allows to write rop chain and after this overwrite RET with stack pivot gadget to point to rop chain.
+This is about exploiting a heap as a data structure. Negative size of elements on the heap allows to overwrite size of the heap itself to point somewhere above. It allows to write rop chain and after this overwrite RET with stack pivot gadget to point to rop chain.
 
 [Exploit](./exploit.py):
 
