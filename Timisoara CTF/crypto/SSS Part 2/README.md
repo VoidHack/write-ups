@@ -19,9 +19,9 @@ If `f(x)` is [lagrange polynomial](https://en.wikipedia.org/wiki/Lagrange_polyno
     <img src="images/1.png">
 </p>
 
-It means that `y_21 - y_11 = y_22 - y_21`. We can compute `y_i` for each part, if we know `y_i` for just one part and difference between any results.
+It means that `y_21 - y_11 = y_22 - y_21`. We can compute `y_i` for each chunk, if we know `y_i` for just one chunk and difference between any results.
 
-So let's calculate `y_1` for each part.
+So let's calculate `y_1` for each chunk.
 
 Yet we need to predict `f(x)` to decrypt each part of flag.
 
