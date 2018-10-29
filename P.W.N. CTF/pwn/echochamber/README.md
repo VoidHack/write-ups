@@ -19,7 +19,7 @@ PWN | 552 | 8 | merrychap
 
 [echo_chamber](./echo_chamber)
 
-[libc.so.6]()./libc.so.6)
+[libc.so.6](./libc.so.6)
 
 [ld-linux.so.2](./ld-linux.so.2)
 
