@@ -26,7 +26,7 @@ PWN | 552 | 8 | merrychap
 
 There were basically two different approaches to exploit the binary (at least, I found two of them).
 
-1. The first one: Produce a double free attack in the echo loop using format string bug. After this, still in the echo loop, manage the `malloc` to allocate in the same chunk that was freed earlier. Quit from the echo loop and produce fastbin attack, allocating in `__free_hook`, writing `one_gadget` address there.
+1. The first one: Produce a double free attack in the echo loop using format string bug. After this, still in the echo loop, manage the `malloc` to allocate in the same chunk that was freed earlier. Quit from the echo loop and produce fastbin-like attack in tcache, allocating in `__free_hook`, writing `one_gadget` address there.
 
 2. The second one: In the echo loop, use stack address chains to be able to write anywhere in the memory. Then just overwrite RET with the `system` address and RET+8 with the `/bin/sh` address in the given libc.
 
