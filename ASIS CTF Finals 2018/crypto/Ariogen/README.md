@@ -35,9 +35,9 @@ def encrypt(m, pubkey):
 ```
 Also we have `e, n = pubkey, c = enc`.
 
-# First step
+### First step
 
-Firstly we need to understand, how to reverse crypto algorythm. We can try to make it step to step:
+Firstly we need to understand, how to reverse crypto algorythm. We can try to make it step by step:
 
 ```py
 n_2 = n*n
@@ -51,22 +51,22 @@ c * inverse(r_e, n**2) % n_2 = (r**2 + m*n)) # beacuse right part is always lowe
 ```
 To solve this equation we should know `r`. Is there any way to find it???
 
-# Second step
+### Second step
 
-Then lets open parentheses for `c`:
+So lets rearrange `c`:
 ```
 c = (r**e * (r**2 + m*n)) % n**2
 c = (r**e * (r**2) + (m * n * r**e) % n**2
 c = (r**(e+2) + (m * n * r**e)) % n**2
 ```
 
-From this equation we can understand that `c % n = r ** (e+2) % n`. Left part can be easy calculated. But what about right part???
+From this equation we can understand that `c % n = (r**(e+2) + (m * n * r**e)) % n = r ** (e+2) % n`. Left part can be easy calculated. But what about right part???
 
-# Third step
+### Third step
 
-`pow(r, e+2, n) = c % n` looks like classic RSA: `pow(m, e, n) = c`.
+`pow(r, e+2, n) = c % n` looks like the classic RSA: `pow(m, e, N) = c`.
 
-To decrypt this we need to know private key `d`: `m = pow(c, d, n)`.
+To decrypt it, we need to know private key `d`: `m = pow(c, d, N)`.
 
 `d = inverse(e, phi) = inverse(e, (p-1)*(q-1))`. 
 
@@ -77,14 +77,19 @@ fprime = gmpy2.next_prime(2 ** nbit)
 D = getRandomRange(1, nbit**3)
 p = gmpy2.next_prime(fprime + D)
 ```
-This code makes it clear that all `p` parts of `N` are close to each other, because `D` is too low in comparision with `fprime`.
+This code makes it clear that `p` factors of all `N's` are close to each other, because `D` is too low in comparison with `fprime`.
 
-We can try to make a base of generated pubkeys and find `gcd` of current and old `N's`. If `gcd(cur_N, old_N) != 1` than it is equal to `p`. We can factorise `N` and decrypt message.
+We can try to collect a database of generated pubkeys and calculate `gcd` of current and old `N's`. If `gcd(cur_N, old_N) != 1` than it would be equal to `p`. After that we can factorise `N` and calculate `r`:
 
-# Fourth step
+```py
+d = inverse(e+2, (p-1)*(q-1))
+r = pow(c % n, d, n)
+```
+
+### Fourth step
 
 To solve this task we launched our server on the remote host. It accepted requests with new `N` and checked `gcd` with old ones. 
 
-This server helped us to make parallel collection of `N's`.
+This server helped us to collect `N's` from different hosts.
 
-Our [solver](solver.py) sent to server new `N` and if his `gcd` returns valid `p`, it started to decrypt message with algo from First step. After sending right decrypted message, task server sends back the flag.
+Our [solver](solver.py) sent to our server new `N` and if his `gcd` calculated valid `p`, it started to decrypt message with algo from [First step](#first-step). After sending of right decrypted message, task server sent back the flag.
