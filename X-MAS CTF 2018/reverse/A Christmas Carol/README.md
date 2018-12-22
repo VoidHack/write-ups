@@ -1,4 +1,4 @@
-# A Christmas Carol (454 PTS)
+# A Christmas Carol (445 PTS)
 
 ### Description
 

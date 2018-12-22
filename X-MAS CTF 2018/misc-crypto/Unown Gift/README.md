@@ -1,4 +1,4 @@
-# Unown Gift (497 PTS)
+# Unown Gift (487 PTS)
 
 ### Description
 

@@ -1,4 +1,4 @@
-# Special Christmas Wishlist (183 PTS)
+# Special Christmas Wishlist (50 PTS)
 
 ### Description
 

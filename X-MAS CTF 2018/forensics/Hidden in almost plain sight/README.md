@@ -1,4 +1,4 @@
-# Hidden in almost plain sight (401 PTS)
+# Hidden in almost plain sight (374 PTS)
 
 ### Description
 

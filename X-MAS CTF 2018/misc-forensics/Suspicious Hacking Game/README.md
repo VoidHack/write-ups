@@ -1,4 +1,4 @@
-# Suspicious Hacking Game (482 PTS)
+# Suspicious Hacking Game (468 PTS)
 
 ### Description
 
