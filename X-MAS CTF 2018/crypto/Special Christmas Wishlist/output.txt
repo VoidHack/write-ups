@@ -1,0 +1,148 @@
+line  0, length = 26
+line  1, length = 21
+line  2, length = 23
+line  3, length = 20
+line  4, length = 28
+line  5, length = 21
+line  6, length = 24
+line  7, length = 26
+line  8, length = 21
+line  9, length = 35
+line 10, length = 21
+line 11, length = 24
+line 12, length = 25
+line 13, length = 28
+line 14, length = 30
+line 15, length = 36
+line 16, length = 33
+line 17, length = 26
+line 18, length = 23
+line 19, length = 24
+line 20, length = 35
+line 21, length = 27
+line 22, length = 33
+line 23, length = 27
+line 24, length = 16
+line 25, length = 14
+line 26, length = 25
+line 27, length = 32
+line 28, length = 38
+line 29, length = 25
+line 30, length = 16
+line 31, length = 20
+line 32, length = 20
+line 33, length = 25
+line 34, length = 35
+line 35, length = 21
+line 36, length = 13
+line 37, length = 20
+line 38, length = 14
+line 39, length = 29
+line 40, length = 28
+line 41, length = 12
+line 42, length = 28
+line 43, length = 40
+line 44, length = 38
+line 45, length = 21
+line 46, length = 33
+line 47, length = 37
+line 48, length = 13
+line 49, length = 17
+line 50, length = 25
+line 51, length = 29
+line 52, length = 35
+line 53, length = 15
+line 54, length = 12
+line 55, length = 24
+line 56, length = 30
+line 57, length = 12
+line 58, length = 36
+line 59, length = 13
+line 60, length = 26
+line 61, length = 16
+line 62, length = 35
+line 63, length = 28
+line 64, length = 22
+line 65, length = 20
+line 66, length = 19
+line 67, length = 19
+line 68, length = 23
+line 69, length = 26
+line 70, length = 33
+line 71, length =  9
+line 72, length = 37
+lines count = 73
+abcdcefgahijdcefgkhelgldji
+jdmbnngnbodapqhhrgifl
+kcoaqggmjabllgllgchncsh
+qbffhjsdlfhoceoqagml
+bftgicemgmoeacdchhauadvsbcuk
+csdjobmlkobaahslrgsgm
+iglcdijlchmbjguhicbdigml
+lodadijwdxhjbmfgilueavcemg
+ahijfdlcbiugcheukabov
+oeacduhahmhoqmglcgoagllsdigjablllgc
+vgfglcbawgsgampkhafgm
+bmcdlbibaqboqhhlbacukglc
+bemhmblobmcadjkcdijvbigal
+ckglgblgmvgicjbmfgilueavcemg
+ckgyedcgbobxdijyeglcnhmyegmdgl
+mgupuagfjabllcmggjahqglmgabcdhilkdvl
+igsphmrcdogluelchonmhicvbjgvexxag
+ckgqglcladijqgtgmbjguhhagm
+cmdhodzgfogcbalgbmmdijl
+qdmckohicknahsgmigurabug
+bohckgmlahtgdlqgphifogblemglvhhilgc
+sgffdijsbacxvgmlhibadxgfbmc
+vgmlhibadxgfjhhfidjkcadccagogqhhr
+uelchovgcihlgvmdicigurabugl
+uelchovgcvdaahsl
+ysgmcprgpqhbmf
+aabobmbobabmjgxdvvgmvheuk
+odohlbfdbjmbojabllsbmglgchnckmgg
+ckbirphenhmphemvbmcdiopwhemigpigurabug
+phjbvhlgkbijdijlueavcemgl
+ckgqdrgukbdiqhsa
+umdolhikgbmceoqmgaab
+ckgyedxdildfgckgobxg
+ogilkgmqbasbmodijladvvgml
+phemlodigbifhemlgijmbtgffgubicgmlgc
+ckgbiidtgmlbmpwhemiba
+ohoobqdmfuenn
+sdigqbmmgajedcbmmbur
+ckgvaelkhmjbil
+jbmadujmbcgmbifhdafdvvdijfdlk
+hrchqgmnglcbagqggmqmgsdijrdc
+obcglnhmadng
+qhhrahtgmladjkcsgdjkclubmtgl
+uhilcdcecdhihneidcgflcbcglhnbogmdubjabll
+jhanjabllglvgscgmbijgauhdillgchncsgatg
+qeiipngacqbqpladvvgml
+vgmlhibadxgfcmggcmeirjabllsbmgfeh
+gzvgucdijphebrggvlbrgvmgjibiupwhemiba
+ckgqgmmpqeffp
+ckgqdmfdgpbmiqhsa
+rbickbukbifgadgmlgbmmdijl
+vgmlhibadxgfoptgmphsiibogqhhr
+eiduhmibifmbdiqhsodlobcukgfgbmmdijl
+lahckvbalohqdag
+qbchibqmbiuk
+vgmlhibadxgfueccdijqhbmf
+lohrgfgcguchmfgbucdtbcdhichsga
+ckgaeigadjkc
+vgmlhibadxgfbiidtgmlbmpvelkvdielbobv
+ogilcbuhlhurl
+gashhfckgeiduhmiugmgbaqhsa
+ckgadccagvbcdgic
+udmuaghnnbodapbifnmdgifllgmtdijqhsa
+jabllnahsgmjbmfgiugicgmvdgug
+qdmcklchigodigmbalhbvl
+lgchnnhemjhanjabllgl
+ckgugfbmckeoqvdbihl
+uelchoobvuhblcgmlgc
+qdjvgmlhibadcpfglrldjil
+lgblchiglvablklvhijgkhafgm
+phemohlcfgldmgfhqwgucckdlukmdlobl
+ckgnabjdl
+zoblphebmglhjhhfbcleqlcdcecdhiudvkgml
+

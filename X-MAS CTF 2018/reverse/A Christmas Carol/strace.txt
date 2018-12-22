@@ -1,0 +1,1863 @@
+execve("./encoder.exe", ["./encoder.exe", "file", "file.mid"], [/* 93 vars */]) = 0
+brk(NULL)                               = 0x126b000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/tls/x86_64/libpython2.7.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/tls/x86_64", 0x7fff59652650) = -1 ENOENT (No such file or directory)
+open("/usr/lib/tls/libpython2.7.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/tls", 0x7fff59652650)    = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64/libpython2.7.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/x86_64", 0x7fff59652650) = -1 ENOENT (No such file or directory)
+open("/usr/lib/libpython2.7.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=181328, ...}) = 0
+mmap(NULL, 181328, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdd5ca61000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\365\4\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=3582904, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ca60000
+mmap(NULL, 5824432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd5c2db000
+mprotect(0x7fdd5c5cd000, 2097152, PROT_NONE) = 0
+mmap(0x7fdd5c7cd000, 495616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f2000) = 0x7fdd5c7cd000
+mmap(0x7fdd5c846000, 143280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c846000
+close(3)                                = 0
+open("/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd5bf11000
+mprotect(0x7fdd5c0d1000, 2097152, PROT_NONE) = 0
+mmap(0x7fdd5c2d1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fdd5c2d1000
+mmap(0x7fdd5c2d7000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c2d7000
+close(3)                                = 0
+open("/usr/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd5bcf4000
+mprotect(0x7fdd5bd0c000, 2093056, PROT_NONE) = 0
+mmap(0x7fdd5bf0b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fdd5bf0b000
+mmap(0x7fdd5bf0d000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdd5bf0d000
+close(3)                                = 0
+open("/usr/lib/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\35\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=104864, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ca5f000
+mmap(NULL, 2199848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd5bada000
+mprotect(0x7fdd5baf3000, 2093056, PROT_NONE) = 0
+mmap(0x7fdd5bcf2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fdd5bcf2000
+close(3)                                = 0
+open("/usr/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd5b8d6000
+mprotect(0x7fdd5b8d9000, 2093056, PROT_NONE) = 0
+mmap(0x7fdd5bad8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fdd5bad8000
+close(3)                                = 0
+open("/usr/lib/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=10656, ...}) = 0
+mmap(NULL, 2105608, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd5b6d3000
+mprotect(0x7fdd5b6d5000, 2093056, PROT_NONE) = 0
+mmap(0x7fdd5b8d4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdd5b8d4000
+close(3)                                = 0
+open("/usr/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0V\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1088952, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ca5e000
+mmap(NULL, 3178744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd5b3ca000
+mprotect(0x7fdd5b4d2000, 2093056, PROT_NONE) = 0
+mmap(0x7fdd5b6d1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x107000) = 0x7fdd5b6d1000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ca5d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ca5c000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ca5b000
+arch_prctl(ARCH_SET_FS, 0x7fdd5ca5c700) = 0
+mprotect(0x7fdd5c2d1000, 16384, PROT_READ) = 0
+mprotect(0x7fdd5b6d1000, 4096, PROT_READ) = 0
+mprotect(0x7fdd5b8d4000, 4096, PROT_READ) = 0
+mprotect(0x7fdd5bad8000, 4096, PROT_READ) = 0
+mprotect(0x7fdd5bcf2000, 4096, PROT_READ) = 0
+mprotect(0x7fdd5bf0b000, 4096, PROT_READ) = 0
+mprotect(0x7fdd5c7cd000, 8192, PROT_READ) = 0
+mprotect(0x61f000, 4096, PROT_READ)     = 0
+mprotect(0x7fdd5ca8e000, 4096, PROT_READ) = 0
+munmap(0x7fdd5ca61000, 181328)          = 0
+set_tid_address(0x7fdd5ca5c9d0)         = 26995
+set_robust_list(0x7fdd5ca5c9e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7fdd5bcf9b50, [], SA_RESTORER|SA_SIGINFO, 0x7fdd5bd05390}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7fdd5bcf9be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fdd5bd05390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x126b000
+brk(0x128c000)                          = 0x128c000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ca1b000
+brk(0x12b4000)                          = 0x12b4000
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 3), ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 3), ...}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 3), ...}) = 0
+fstat(2, {st_mode=S_IFREG|0664, st_size=8183, ...}) = 0
+getcwd("/home/v0va/Desktop/xmas", 4096) = 24
+readlink("/home/v0va/Desktop/xmas/encoder.exe", 0x7fff59651d60, 4096) = -1 EINVAL (Invalid argument)
+stat("/home/v0va/Desktop/xmas/Modules/Setup", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/lib/python2.7/os.py", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/lib/python2.7/os.pyc", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/lib/python2.7/os.py", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/lib/python2.7/os.pyc", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/lib/python2.7/os.py", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/lib/python2.7/os.pyc", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/lib/python2.7/os.py", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/lib/python2.7/os.pyc", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/os.py", {st_mode=S_IFREG|0644, st_size=25910, ...}) = 0
+stat("/home/v0va/Desktop/xmas/pybuilddir.txt", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/lib/python2.7/lib-dynload", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/lib/python2.7/lib-dynload", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/lib/python2.7/lib-dynload", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/home/lib/python2.7/lib-dynload", 0x7fff59651d60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c9db000
+rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER, 0x7fdd5bf464b0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, {SIG_IGN, [], SA_RESTORER, 0x7fdd5bf464b0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [], SA_RESTORER, 0x7fdd5bf464b0}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {SIG_IGN, [], SA_RESTORER, 0x7fdd5bf464b0}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x7fdd5c342720, [], SA_RESTORER, 0x7fdd5bf464b0}, {SIG_DFL, [], 0}, 8) = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8587008, ...}) = 0
+mmap(NULL, 8587008, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdd5ab99000
+close(3)                                = 0
+stat("/usr/lib/python2.7/", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7/", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5698, ...}) = 0
+stat("/usr/lib/python2.7/encodings/__init__", 0x7fff59651c10) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__init__.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__init__.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__init__module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__init__.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5698, ...}) = 0
+open("/usr/lib/python2.7/encodings/__init__.pyc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=4370, ...}) = 0
+read(4, "\3\363\r\n\"\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0s\216\0\0\0d\0"..., 4096) = 4096
+fstat(4, {st_mode=S_IFREG|0644, st_size=4370, ...}) = 0
+read(4, "\1$\1$\0016\0016\1\3\1\3\1\26\1\"\0015\1\22\3\n\4\3\1\20\1\r\1\4\2\r"..., 4096) = 274
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/lib/python2.7/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7/encodings/codecs", 0x7fff59651710) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/codecs.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/codecs.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/codecsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/codecs.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/codecs.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/codecs", 0x7fff59651710) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/codecs.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/codecs.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/codecsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/codecs.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=36095, ...}) = 0
+open("/usr/lib/python2.7/codecs.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=36654, ...}) = 0
+read(5, "\3\363\r\n\32\327\351[c\0\0\0\0\0\0\0\0+\0\0\0@\0\0\0sp\3\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=36654, ...}) = 0
+read(5, "ndling.\n\n            The method "..., 28672) = 28672
+read(5, "oding cannot be found\n        or"..., 4096) = 3886
+read(5, "", 4096)                       = 0
+brk(0x12d5000)                          = 0x12d5000
+close(5)                                = 0
+close(4)                                = 0
+stat("/usr/lib/python2.7/encodings/encodings", 0x7fff59651710) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/encodings.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/encodings.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/encodingsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/encodings.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/encodings.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/encodings/aliases", 0x7fff596516b0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/aliases.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/aliases.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/aliasesmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/aliases.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=14848, ...}) = 0
+open("/usr/lib/python2.7/encodings/aliases.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=8768, ...}) = 0
+read(5, "\3\363\r\n\"\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0su\10\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=8768, ...}) = 0
+read(5, "ibm860t\6\0\0\0ibm860t\5\0\0\0cp861t\3\0\0\0"..., 4096) = 4096
+read(5, "\7\3\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\3\7\1\7\1\7\3\7\1\7\3\7\1\7\3"..., 4096) = 576
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+close(4)                                = 0
+stat("/usr/lib/python2.7/encodings/__builtin__", 0x7fff59651710) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__builtin__.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__builtin__.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__builtin__module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__builtin__.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/__builtin__.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+stat("/usr/lib/python2.7/encodings/utf_8", 0x7fff59651990) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/utf_8.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/utf_8.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/utf_8module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/encodings/utf_8.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+open("/usr/lib/python2.7/encodings/utf_8.pyc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1950, ...}) = 0
+read(4, "\3\363\r\n#\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0s\230\0\0\0d\0"..., 4096) = 1950
+fstat(4, {st_mode=S_IFREG|0644, st_size=1950, ...}) = 0
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+close(3)                                = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(2, TCGETS, 0x7fff59652cc0)        = -1 ENOTTY (Inappropriate ioctl for device)
+readlink("./encoder.exe", 0x7fff5964fe80, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/home/v0va/Desktop/xmas", 4096) = 24
+lstat("/home/v0va/Desktop/xmas/encoder.exe", {st_mode=S_IFREG|0775, st_size=140104, ...}) = 0
+stat("/home/v0va/Desktop/xmas", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c99b000
+stat("/home/v0va/Desktop/xmas", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+munmap(0x7fdd5c99b000, 262144)          = 0
+stat("/home/v0va/Desktop/xmas/os", 0x7fff59651bc0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/os.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/os.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/osmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/os.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/os.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/os", 0x7fff59651bc0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/os.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/os.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/osmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/os.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=25910, ...}) = 0
+open("/usr/lib/python2.7/os.pyc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=25593, ...}) = 0
+read(4, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\16\0\0\0@\0\0\0s\372\6\0\0d\0"..., 4096) = 4096
+fstat(4, {st_mode=S_IFREG|0644, st_size=25593, ...}) = 0
+read(4, "  N(\t\0\0\0R\t\0\0\0t\5\0\0\0splitt\6\0\0\0exis"..., 20480) = 20480
+read(4, "s\3\0\0\0os2s\2\0\0\0nt(X\0\0\0t\7\0\0\0__doc__"..., 4096) = 1017
+read(4, "", 4096)                       = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c99b000
+mmap(NULL, 200704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c96a000
+close(4)                                = 0
+sysinfo({uptime=523922, loads=[88864, 87904, 98720], totalram=4031201280, freeram=215056384, sharedram=257527808, bufferram=105390080, totalswap=20479733760, freeswap=19386302464, procs=1131, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+stat("/home/v0va/Desktop/xmas/posixpath", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/posixpath.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/posixpath.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/posixpathmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/posixpath.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/posixpath.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/posixpath", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/posixpath.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/posixpath.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/posixpathmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/posixpath.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=13925, ...}) = 0
+open("/usr/lib/python2.7/posixpath.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=11374, ...}) = 0
+read(5, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0&\0\0\0@\0\0\0s\373\1\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=11374, ...}) = 0
+read(5, "\0\0\0Test whether a path exists.  "..., 4096) = 4096
+read(5, "\4\0\0\0NoneRD\0\0\0t\6\0\0\0searcht\4\0\0\0spa"..., 4096) = 3182
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+stat("/home/v0va/Desktop/xmas/stat", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/stat.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/stat.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/statmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/stat.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/stat.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/stat", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/stat.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/stat.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/statmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/stat.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=1842, ...}) = 0
+open("/usr/lib/python2.7/stat.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=2731, ...}) = 0
+read(6, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\1\0\0\0@\0\0\0s{\1\0\0d\0"..., 4096) = 2731
+fstat(6, {st_mode=S_IFREG|0644, st_size=2731, ...}) = 0
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+close(5)                                = 0
+stat("/home/v0va/Desktop/xmas/genericpath", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/genericpath.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/genericpath.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/genericpathmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/genericpath.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/genericpath.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/genericpath", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/genericpath.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/genericpath.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/genericpathmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/genericpath.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=3201, ...}) = 0
+open("/usr/lib/python2.7/genericpath.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=3495, ...}) = 0
+read(6, "\3\363\r\n\32\327\351[c\0\0\0\0\0\0\0\0\10\0\0\0@\0\0\0s\305\0\0\0d\0"..., 4096) = 3495
+fstat(6, {st_mode=S_IFREG|0644, st_size=3495, ...}) = 0
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+close(5)                                = 0
+stat("/home/v0va/Desktop/xmas/warnings", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/warnings.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/warnings.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/warningsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/warnings.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/warnings.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/warnings", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/warnings.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/warnings.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/warningsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/warnings.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=14748, ...}) = 0
+open("/usr/lib/python2.7/warnings.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=13578, ...}) = 0
+read(6, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\10\0\0\0@\0\0\0sY\2\0\0d\0"..., 4096) = 4096
+fstat(6, {st_mode=S_IFREG|0644, st_size=13578, ...}) = 0
+read(6, "f warnings filters (at the front"..., 8192) = 8192
+read(6, "r/lib/python2.7/warnings.pyR\2\0\0\0"..., 4096) = 1290
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+stat("/home/v0va/Desktop/xmas/linecache", 0x7fff59650cc0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/linecache.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/linecache.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/linecachemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/linecache.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/linecache.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/linecache", 0x7fff59650cc0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/linecache.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/linecache.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/linecachemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/linecache.py", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=4027, ...}) = 0
+open("/usr/lib/python2.7/linecache.pyc", O_RDONLY) = 7
+fstat(7, {st_mode=S_IFREG|0644, st_size=3260, ...}) = 0
+read(7, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0sp\0\0\0d\0"..., 4096) = 3260
+fstat(7, {st_mode=S_IFREG|0644, st_size=3260, ...}) = 0
+brk(0x12f6000)                          = 0x12f6000
+read(7, "", 4096)                       = 0
+brk(0x12f5000)                          = 0x12f5000
+close(7)                                = 0
+brk(0x12f4000)                          = 0x12f4000
+close(6)                                = 0
+stat("/home/v0va/Desktop/xmas/types", 0x7fff59650cc0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/types.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/types.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/typesmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/types.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/types.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/types", 0x7fff59650cc0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/types.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/types.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/typesmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/types.py", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=2094, ...}) = 0
+open("/usr/lib/python2.7/types.pyc", O_RDONLY) = 7
+fstat(7, {st_mode=S_IFREG|0644, st_size=2711, ...}) = 0
+read(7, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\5\0\0\0@\0\0\0sH\2\0\0d\0"..., 4096) = 2711
+fstat(7, {st_mode=S_IFREG|0644, st_size=2711, ...}) = 0
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+close(6)                                = 0
+close(5)                                = 0
+close(4)                                = 0
+stat("/home/v0va/Desktop/xmas/UserDict", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/UserDict.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/UserDict.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/UserDictmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/UserDict.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/UserDict.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/UserDict", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/UserDict.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/UserDict.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/UserDictmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/UserDict.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=7060, ...}) = 0
+open("/usr/lib/python2.7/UserDict.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=9621, ...}) = 0
+read(5, "\3\363\r\n\31\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0sb\0\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=9621, ...}) = 0
+read(5, "got %dR\1\0\0\0i\377\377\377\377s0\0\0\0Passing 'di"..., 4096) = 4096
+read(5, "\0\0\261\0\0\0s\f\0\0\0\0\1\3\1\34\1\r\1\r\1\7\1c\2\0\0\0\5\0\0\0"..., 4096) = 1429
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+stat("/home/v0va/Desktop/xmas/_abcoll", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_abcoll.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_abcoll.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_abcollmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_abcoll.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_abcoll.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/_abcoll", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_abcoll.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_abcoll.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_abcollmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_abcoll.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=18619, ...}) = 0
+open("/usr/lib/python2.7/_abcoll.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=25474, ...}) = 0
+read(6, "\3\363\r\n\31\327\351[c\0\0\0\0\0\0\0\0\20\0\0\0@\0\0\0s\224\2\0\0d\0"..., 4096) = 4096
+fstat(6, {st_mode=S_IFREG|0644, st_size=25474, ...}) = 0
+read(6, "\1\0Z\7\0RS(\2\0\0\0c\2\0\0\0\2\0\0\0\1\0\0\0C\0\0\0s\4\0"..., 20480) = 20480
+read(6, "alue.\n           Raise ValueErro"..., 4096) = 898
+read(6, "", 4096)                       = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c92a000
+close(6)                                = 0
+stat("/home/v0va/Desktop/xmas/abc", 0x7fff59650cc0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/abc.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/abc.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/abcmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/abc.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/abc.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/abc", 0x7fff59650cc0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/abc.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/abc.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/abcmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/abc.py", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=7145, ...}) = 0
+open("/usr/lib/python2.7/abc.pyc", O_RDONLY) = 7
+fstat(7, {st_mode=S_IFREG|0644, st_size=6121, ...}) = 0
+read(7, "\3\363\r\n\32\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0s}\0\0\0d\0"..., 4096) = 4096
+fstat(7, {st_mode=S_IFREG|0644, st_size=6121, ...}) = 0
+read(7, "egisteri\0\0\0s\20\0\0\0\0\2\30\1\17\1\17\1\4\3\17\2\17\1\20\1"..., 4096) = 2025
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+stat("/home/v0va/Desktop/xmas/_weakrefset", 0x7fff596507c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_weakrefset.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_weakrefset.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_weakrefsetmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_weakrefset.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_weakrefset.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/_weakrefset", 0x7fff596507c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_weakrefset.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_weakrefset.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_weakrefsetmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_weakrefset.py", O_RDONLY) = 7
+fstat(7, {st_mode=S_IFREG|0644, st_size=5911, ...}) = 0
+open("/usr/lib/python2.7/_weakrefset.pyc", O_RDONLY) = 8
+fstat(8, {st_mode=S_IFREG|0644, st_size=9582, ...}) = 0
+read(8, "\3\363\r\n\31\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0sI\0\0\0d\0"..., 4096) = 4096
+fstat(8, {st_mode=S_IFREG|0644, st_size=9582, ...}) = 0
+read(8, "efset.pyR\27\0\0\0q\0\0\0s\6\0\0\0\0\1\t\1\r\1c\2\0\0"..., 4096) = 4096
+read(8, "\26\0\210\0\0j\1\0\203\0\0\1n\0\0\210\0\0|\1\0k\10\0r2\0\210\0\0j\2"..., 4096) = 1390
+read(8, "", 4096)                       = 0
+close(8)                                = 0
+close(7)                                = 0
+close(6)                                = 0
+close(5)                                = 0
+close(4)                                = 0
+stat("/home/v0va/Desktop/xmas/copy_reg", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/copy_reg.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/copy_reg.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/copy_regmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/copy_reg.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/copy_reg.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/copy_reg", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/copy_reg.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/copy_reg.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/copy_regmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/copy_reg.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=6800, ...}) = 0
+open("/usr/lib/python2.7/copy_reg.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=5091, ...}) = 0
+read(5, "\3\363\r\n\32\327\351[c\0\0\0\0\0\0\0\0\5\0\0\0@\0\0\0s\326\0\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=5091, ...}) = 0
+read(5, "\0\0\0t\3\0\0\0intt\n\0\0\0ValueErrort\23\0\0\0_"..., 4096) = 995
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+close(4)                                = 0
+close(3)                                = 0
+stat("/home/v0va/Desktop/xmas/site", 0x7fff59651bc0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/site.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/site.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sitemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/site.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/site.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/site", 0x7fff59651bc0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/site.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/site.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sitemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/site.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=20370, ...}) = 0
+open("/usr/lib/python2.7/site.pyc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=19712, ...}) = 0
+read(4, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0sp\1\0\0d\0"..., 4096) = 4096
+fstat(4, {st_mode=S_IFREG|0644, st_size=19712, ...}) = 0
+read(4, "\0(\0\0\0\0s\32\0\0\0/usr/lib/python2.7/si"..., 12288) = 12288
+read(4, "s\24\0\0\0\0\4\17\1\30\1\20\1\17\1\3\1\21\1\r\1\f\1\20\1c\0\0\0\0\1\0"..., 4096) = 3328
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/home/v0va/Desktop/xmas/traceback", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/traceback.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/traceback.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/tracebackmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/traceback.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/traceback.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/traceback", 0x7fff596516c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/traceback.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/traceback.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/tracebackmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/traceback.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=11285, ...}) = 0
+open("/usr/lib/python2.7/traceback.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=11639, ...}) = 0
+read(5, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\16\0\0\0@\0\0\0sB\1\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=11639, ...}) = 0
+read(5, "!\0\0\0i\0\0\0\0i\1\0\0\0N(\20\0\0\0R\24\0\0\0R\"\0\0\0R\25"..., 4096) = 4096
+read(5, "\0\203\0\0\\\3\0}\2\0}\3\0}\4\0t\4\0|\2\0|\3\0|\4\0|\0\0|"..., 4096) = 3447
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+close(4)                                = 0
+geteuid()                               = 1000
+getuid()                                = 1000
+getegid()                               = 1000
+getgid()                                = 1000
+stat("/home/v0va/Desktop/xmas/sysconfig", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sysconfig.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sysconfig.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sysconfigmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sysconfig.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sysconfig.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7/sysconfig", 0x7fff596511c0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sysconfig.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sysconfig.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sysconfigmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sysconfig.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=25204, ...}) = 0
+open("/usr/lib/python2.7/sysconfig.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=18673, ...}) = 0
+read(5, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\7\0\0\0@\0\0\0s\217\5\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=18673, ...}) = 0
+read(5, "\3\0|\2\0k\6\0r7\0q\31\0n\0\0|\4\0|\0\0|\3\0<q\31\0Wd"..., 12288) = 12288
+read(5, "\0\0005t\7\0\0\0solariss\5\0\0\0%d.%si\3\0\0\0i\2"..., 4096) = 2289
+read(5, "", 4096)                       = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c8ea000
+close(5)                                = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+lstat("/usr/bin/python", {st_mode=S_IFLNK|0777, st_size=9, ...}) = 0
+readlink("/usr/bin/python", "python2.7", 4096) = 9
+lstat("/usr/bin/python2.7", {st_mode=S_IFREG|0755, st_size=3492656, ...}) = 0
+stat("/usr/bin/Modules/Setup.dist", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+stat("/usr/bin/Modules/Setup.local", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+stat("/home/v0va/Desktop/xmas/re", 0x7fff59650e80) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/re.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/re.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/remodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/re.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/re.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/re", 0x7fff59650e80) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/re.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/re.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/remodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/re.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=13423, ...}) = 0
+open("/usr/lib/python2.7/re.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=13371, ...}) = 0
+read(5, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\27\0\0\0@\0\0\0sQ\2\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=13371, ...}) = 0
+read(5, "ports the following functions:\n "..., 8192) = 8192
+read(5, "\0|\10\0\203\1\0\1n\0\0|\7\0}\5\0q-\0W|\2\0|\1\0|\5\0\37f"..., 4096) = 1083
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+stat("/home/v0va/Desktop/xmas/sre_compile", 0x7fff59650980) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_compile.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_compile.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_compilemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_compile.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_compile.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/sre_compile", 0x7fff59650980) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_compile.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_compile.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_compilemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_compile.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=19817, ...}) = 0
+open("/usr/lib/python2.7/sre_compile.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=12529, ...}) = 0
+read(6, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\16\0\0\0@\0\0\0s\317\1\0\0d\0"..., 4096) = 4096
+fstat(6, {st_mode=S_IFREG|0644, st_size=12529, ...}) = 0
+read(6, "_compilet\7\0\0\0SUCCESSt\7\0\0\0_simple"..., 8192) = 8192
+read(6, "intRd\0\0\0Rf\0\0\0R'\0\0\0R\226\0\0\0t\7\0\0\0unic"..., 4096) = 241
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+stat("/home/v0va/Desktop/xmas/sre_parse", 0x7fff59650480) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_parse.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_parse.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_parsemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_parse.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_parse.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/sre_parse", 0x7fff59650480) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_parse.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_parse.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_parsemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_parse.py", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=28911, ...}) = 0
+open("/usr/lib/python2.7/sre_parse.pyc", O_RDONLY) = 7
+fstat(7, {st_mode=S_IFREG|0644, st_size=19945, ...}) = 0
+read(7, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\4\0\0\0@\0\0\0s\312\2\0\0d\0"..., 4096) = 4096
+fstat(7, {st_mode=S_IFREG|0644, st_size=19945, ...}) = 0
+brk(0x1317000)                          = 0x1317000
+read(7, "\0\0\3\0\0\0\3\0\0\0C\0\0\0s\21\0\0\0|\2\0|\0\0j\0\0|\1\0<"..., 12288) = 12288
+read(7, "\2\0_\4\0t\5\0|\3\0|\2\0d\1\0\203\3\0}\4\0|\3\0j\6\0\203\0\0"..., 4096) = 3561
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+stat("/home/v0va/Desktop/xmas/sre_constants", 0x7fff5964ff80) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_constants.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_constants.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_constantsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_constants.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sre_constants.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/sre_constants", 0x7fff5964ff80) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_constants.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_constants.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_constantsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sre_constants.py", O_RDONLY) = 7
+fstat(7, {st_mode=S_IFREG|0644, st_size=7197, ...}) = 0
+open("/usr/lib/python2.7/sre_constants.pyc", O_RDONLY) = 8
+fstat(8, {st_mode=S_IFREG|0644, st_size=6185, ...}) = 0
+read(8, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0 \0\0\0@\0\0\0s*\5\0\0d\0"..., 4096) = 4096
+fstat(8, {st_mode=S_IFREG|0644, st_size=6185, ...}) = 0
+read(8, "FIX %d\ns\34\0\0\0#define SRE_INFO_LIT"..., 4096) = 2089
+read(8, "", 4096)                       = 0
+close(8)                                = 0
+close(7)                                = 0
+close(6)                                = 0
+close(5)                                = 0
+close(4)                                = 0
+stat("/home/v0va/Desktop/xmas/_sysconfigdata", 0x7fff59650d40) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdatamodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/_sysconfigdata", 0x7fff59650d40) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdatamodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=126, ...}) = 0
+open("/usr/lib/python2.7/_sysconfigdata.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=279, ...}) = 0
+read(5, "\3\363\r\n\252\276\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0s6\0\0\0d\0"..., 4096) = 279
+fstat(5, {st_mode=S_IFREG|0644, st_size=279, ...}) = 0
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+stat("/home/v0va/Desktop/xmas/_sysconfigdata_nd", 0x7fff59650840) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata_nd.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata_nd.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata_ndmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata_nd.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/_sysconfigdata_nd.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/_sysconfigdata_nd", 0x7fff59650840) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata_nd.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata_nd.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata_ndmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata_nd.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/_sysconfigdata_nd.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python2.7/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd", 0x7fff59650840) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_ndmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=17937, ...}) = 0
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=20808, ...}) = 0
+read(6, "\3\363\r\n5\327\351[c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0s)\17\0\0i)"..., 4096) = 4096
+fstat(6, {st_mode=S_IFREG|0644, st_size=20808, ...}) = 0
+read(6, "er/asdl_c.pyt\r\0\0\0ASDLGEN_FILESs\25"..., 16384) = 16384
+read(6, "\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1\7\1"..., 4096) = 328
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+close(5)                                = 0
+close(4)                                = 0
+brk(0x1343000)                          = 0x1343000
+brk(0x1337000)                          = 0x1337000
+stat("/home/v0va/.local/lib/python2.7/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+open("/home/v0va/.local/lib/python2.7/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+getdents(4, /* 53 entries */, 32768)    = 1896
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+stat("/home/v0va/.local/local/lib/python2.7/dist-packages", 0x7fff59652460) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/.local/lib/python2.7/dist-packages", 0x7fff59652460) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=12288, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFDIR|S_ISGID|0775, st_size=12288, ...}) = 0
+getdents(4, /* 186 entries */, 32768)   = 7424
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+open("/usr/local/lib/python2.7/dist-packages/easy-install.pth", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=797, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=797, ...}) = 0
+read(4, "import sys; sys.__plen = len(sys"..., 8192) = 797
+read(4, "", 4096)                       = 0
+stat("/usr/local/lib/python2.7/dist-packages/pyOpenSSL-17.5.0-py2.7.egg", {st_mode=S_IFREG|0644, st_size=106484, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/scrypt-0.8.6-py2.7-linux-x86_64.egg", {st_mode=S_IFREG|0644, st_size=70402, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/pysha3-1.0.2-py2.7-linux-x86_64.egg", {st_mode=S_IFREG|0644, st_size=129033, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/py_ecc-1.4.2-py2.7.egg", {st_mode=S_IFREG|0644, st_size=32830, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/pbkdf2-1.3-py2.7.egg", {st_mode=S_IFREG|0644, st_size=8889, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/pyethash-0.1.27-py2.7-linux-x86_64.egg", {st_mode=S_IFREG|0644, st_size=46768, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/docopt-0.6.2-py2.7.egg", {st_mode=S_IFREG|0644, st_size=21832, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/Markdown-2.6.11-py2.7.egg", {st_mode=S_IFREG|0644, st_size=171274, ...}) = 0
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+open("/usr/local/lib/python2.7/dist-packages/matplotlib-2.2.3-py2.7-nspkg.pth", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1138, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1138, ...}) = 0
+read(4, "import sys, types, os;has_mfs = "..., 8192) = 1138
+read(4, "", 4096)                       = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c8aa000
+munmap(0x7fdd5c8aa000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c8aa000
+munmap(0x7fdd5c8aa000, 262144)          = 0
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+stat("/usr/lib/python2.7/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+open("/usr/lib/python2.7/dist-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+getdents(4, /* 159 entries */, 32768)   = 6032
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+open("/usr/lib/python2.7/dist-packages/ndg_httpsclient-0.4.0-nspkg.pth", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=296, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=296, ...}) = 0
+read(4, "import sys, types, os;p = os.pat"..., 8192) = 296
+read(4, "", 4096)                       = 0
+stat("/usr/lib/python2.7/dist-packages/ndg/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+open("/usr/lib/python2.7/dist-packages/pygtk.pth", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=8, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=8, ...}) = 0
+read(4, "gtk-2.0\n", 8192)              = 8
+read(4, "", 4096)                       = 0
+stat("/usr/lib/python2.7/dist-packages/gtk-2.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/pyOpenSSL-17.5.0-py2.7.egg", {st_mode=S_IFREG|0644, st_size=106484, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/pyOpenSSL-17.5.0-py2.7.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=106484, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=106484, ...}) = 0
+lseek(4, 102400, SEEK_SET)              = 102400
+read(4, "L\206\237\7n\224T[;\233\25FW\314\312\257,\356\334\375\366\3239\333H\305M\233\272\266\26\347"..., 4062) = 4062
+read(4, "PK\5\6\0\0\0\0\26\0\26\0\200\5\0\0^\232\1\0\0\0", 4096) = 22
+lseek(4, 102400, SEEK_SET)              = 102400
+read(4, "L\206\237\7n\224T[;\233\25FW\314\312\257,\356\334\375\366\3239\333H\305M\233\272\266\26\347"..., 4096) = 4084
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/scrypt-0.8.6-py2.7-linux-x86_64.egg", {st_mode=S_IFREG|0644, st_size=70402, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/scrypt-0.8.6-py2.7-linux-x86_64.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=70402, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=70402, ...}) = 0
+lseek(4, 69632, SEEK_SET)               = 69632
+read(4, "\20v\2\0\n\0\0\0\0\0\0\0\0\0\0\0\355\201\273\0\0\0_scrypt.so"..., 748) = 748
+read(4, "PK\5\6\0\0\0\0\r\0\r\0<\3\0\0\260\17\1\0\0\0", 4096) = 22
+lseek(4, 65536, SEEK_SET)               = 65536
+read(4, "[\r\365'\304(\35DR$\251\21(\274\24:\210\214\350fi,\256J\265su\220\5\211Lc"..., 4096) = 4096
+read(4, "\20v\2\0\n\0\0\0\0\0\0\0\0\0\0\0\355\201\273\0\0\0_scrypt.so"..., 4096) = 770
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pysha3-1.0.2-py2.7-linux-x86_64.egg", {st_mode=S_IFREG|0644, st_size=129033, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/pysha3-1.0.2-py2.7-linux-x86_64.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=129033, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=129033, ...}) = 0
+lseek(4, 126976, SEEK_SET)              = 126976
+read(4, "\201\216|\333\220\255\32\264\260\217\244\10\213\274Pi=n\31\16\255\262\\)\231\355\217\3115\32];"..., 2035) = 2035
+read(4, "PK\5\6\0\0\0\0\v\0\v\0\251\2\0\0J\365\1\0\0\0", 4096) = 22
+lseek(4, 126976, SEEK_SET)              = 126976
+read(4, "\201\216|\333\220\255\32\264\260\217\244\10\213\274Pi=n\31\16\255\262\\)\231\355\217\3115\32];"..., 4096) = 2057
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/py_ecc-1.4.2-py2.7.egg", {st_mode=S_IFREG|0644, st_size=32830, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/py_ecc-1.4.2-py2.7.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=32830, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=32830, ...}) = 0
+lseek(4, 32768, SEEK_SET)               = 32768
+read(4, "\0}\5\0\0\21\0\0\0\0\0\0\0\0\0\0\0\244\201\226t\0\0EGG-INFO/"..., 40) = 40
+read(4, "PK\5\6\0\0\0\0\33\0\33\0\34\10\0\0\fx\0\0\0\0", 4096) = 22
+lseek(4, 28672, SEEK_SET)               = 28672
+read(4, "\321\23=\237l\325O\333\321\376\7;\211\377\324Ax!I\266/\216\221\363\227@M\262\241\251\254\271"..., 4096) = 4096
+read(4, "\0}\5\0\0\21\0\0\0\0\0\0\0\0\0\0\0\244\201\226t\0\0EGG-INFO/"..., 4096) = 62
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/pbkdf2-1.3-py2.7.egg", {st_mode=S_IFREG|0644, st_size=8889, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/pbkdf2-1.3-py2.7.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=8889, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=8889, ...}) = 0
+lseek(4, 8192, SEEK_SET)                = 8192
+read(4, "]\16\223\334\323\267(\333\311\n\265\17\226\277\17\333\303\361\317\201\255\321WNZ\232\222\237Z\351AM"..., 675) = 675
+read(4, "PK\5\6\0\0\0\0\7\0\7\0\276\1\0\0\345 \0\0\0\0", 4096) = 22
+lseek(4, 8192, SEEK_SET)                = 8192
+read(4, "]\16\223\334\323\267(\333\311\n\265\17\226\277\17\333\303\361\317\201\255\321WNZ\232\222\237Z\351AM"..., 4096) = 697
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/pyethash-0.1.27-py2.7-linux-x86_64.egg", {st_mode=S_IFREG|0644, st_size=46768, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/pyethash-0.1.27-py2.7-linux-x86_64.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=46768, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=46768, ...}) = 0
+lseek(4, 45056, SEEK_SET)               = 45056
+read(4, "?F\177\232\315vm\277:\371x\241sW\2173\276\275\355\261\377\356\371a\264\3760]3G\213\355"..., 1690) = 1690
+read(4, "PK\5\6\0\0\0\0\t\0\t\0A\2\0\0Y\264\0\0\0\0", 4096) = 22
+lseek(4, 45056, SEEK_SET)               = 45056
+read(4, "?F\177\232\315vm\277:\371x\241sW\2173\276\275\355\261\377\356\371a\264\3760]3G\213\355"..., 4096) = 1712
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/docopt-0.6.2-py2.7.egg", {st_mode=S_IFREG|0644, st_size=21832, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/docopt-0.6.2-py2.7.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=21832, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=21832, ...}) = 0
+lseek(4, 20480, SEEK_SET)               = 20480
+read(4, "\25\361\316\34\206\366\24\25g\355\340K\307\374\256\26\317\211\314\224\273\17\370\221\27\274t\32\341[\24\361"..., 1330) = 1330
+read(4, "PK\5\6\0\0\0\0\7\0\7\0\276\1\0\0tS\0\0\0\0", 4096) = 22
+lseek(4, 20480, SEEK_SET)               = 20480
+read(4, "\25\361\316\34\206\366\24\25g\355\340K\307\374\256\26\317\211\314\224\273\17\370\221\27\274t\32\341[\24\361"..., 4096) = 1352
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/Markdown-2.6.11-py2.7.egg", {st_mode=S_IFREG|0644, st_size=171274, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/Markdown-2.6.11-py2.7.egg", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=171274, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=171274, ...}) = 0
+lseek(4, 167936, SEEK_SET)              = 167936
+read(4, "\0\10\0q0$L\354\202\353\305X\10\0\0\24\26\0\0\20\0\0\0\0\0\0\0\0\0\0\0\244"..., 3316) = 3316
+read(4, "PK\5\6\0\0\0\0B\0B\0\352\22\0\0\n\212\2\0\0\0", 4096) = 22
+lseek(4, 163840, SEEK_SET)              = 163840
+read(4, "-g\212n3PX\256\246P\25\346\227\256\255S\312\251\351T\375F9&\277\215\306ala\211\244"..., 4096) = 4096
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5c8aa000
+read(4, "\0\10\0q0$L\354\202\353\305X\10\0\0\24\26\0\0\20\0\0\0\0\0\0\0\0\0\0\0\244"..., 4096) = 3338
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/home/v0va/Desktop/xmas/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sitecustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/sitecustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/sitecustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sitecustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sitecustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sitecustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/sitecustomize.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
+open("/usr/lib/python2.7/sitecustomize.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=232, ...}) = 0
+read(5, "\3\363\r\n\261\217%Zc\0\0\0\0\0\0\0\0\5\0\0\0@\0\0\0s2\0\0\0y\20"..., 4096) = 232
+fstat(5, {st_mode=S_IFREG|0644, st_size=232, ...}) = 0
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/plat-x86_64-linux-gnu/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-tk", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python2.7/lib-tk", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python2.7/lib-tk/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-old", 0x7fff5964fcd0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python2.7/lib-old", 0x7fff59650cb0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python2.7/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python2.7/lib-dynload/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/.local/lib/python2.7/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+stat("/home/v0va/.local/lib/python2.7/site-packages", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+stat("/home/v0va/.local/lib/python2.7/site-packages/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=12288, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=12288, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python2.7/dist-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python2.7/dist-packages/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/dist-packages/gtk-2.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python2.7/dist-packages/gtk-2.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python2.7/dist-packages/gtk-2.0/apport_python_hook", 0x7fff59650f40) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/apport_python_hook.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/apport_python_hook.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/apport_python_hookmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/apport_python_hook.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/apport_python_hook.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/plat-x86_64-linux-gnu/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-tk/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-dynload/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/.local/lib/python2.7/site-packages/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/dist-packages/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/dist-packages/gtk-2.0/usercustomize", 0x7fff59651440) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/usercustomize.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/usercustomize.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/usercustomizemodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/usercustomize.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/dist-packages/gtk-2.0/usercustomize.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/plat-x86_64-linux-gnu/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/plat-x86_64-linux-gnu/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-tk/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-tk/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/lib-dynload/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/lib-dynload/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/.local/lib/python2.7/site-packages/midi", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/midi.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/midi.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/midimodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/midi.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/.local/lib/python2.7/site-packages/midi.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/midi", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/__init__.py", {st_mode=S_IFREG|0664, st_size=118, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/__init__", 0x7fff59651b50) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/__init__.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/__init__.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/__init__module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/__init__.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=118, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/midi/__init__.pyc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=320, ...}) = 0
+read(4, "\3\363\r\n\312\341\24\\c\0\0\0\0\0\0\0\0\2\0\0\0@\0\0\0sB\0\0\0d\0"..., 4096) = 320
+fstat(4, {st_mode=S_IFREG|0644, st_size=320, ...}) = 0
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/containers", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/containers.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/containers.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/containersmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/containers.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0664, st_size=2536, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/midi/containers.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=4180, ...}) = 0
+read(5, "\3\363\r\n\312\341\24\\c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0sF\0\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=4180, ...}) = 0
+read(5, "\0/usr/local/lib/python2.7/dist-p"..., 4096) = 84
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/pprint.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/pprint.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/pprint", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/pprint.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/pprint.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/pprintmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/pprint.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=11777, ...}) = 0
+open("/usr/lib/python2.7/pprint.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=10156, ...}) = 0
+read(6, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\6\0\0\0@\0\0\0s\37\1\0\0d\0"..., 4096) = 4096
+fstat(6, {st_mode=S_IFREG|0644, st_size=10156, ...}) = 0
+read(6, "\0\0\0s\32\0\0\0|\0\0j\0\0|\1\0i\0\0d\1\0d\1\0\203\4\0d\2\0"..., 4096) = 4096
+read(6, "\0}\33\0t\24\0|\33\0|\1\0|\2\0|\3\0\203\4\0\\\3\0}\34\0}\35\0}"..., 4096) = 1964
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+close(5)                                = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/events", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/events.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/events.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/eventsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/events.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0664, st_size=10223, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/midi/events.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=20351, ...}) = 0
+read(5, "\3\363\r\n\312\341\24\\c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0s\346\2\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=20351, ...}) = 0
+brk(0x135b000)                          = 0x135b000
+read(5, "S(\4\0\0\0NR1\0\0\0R\25\0\0\0R\26\0\0\0(\5\0\0\0R1\0\0\0"..., 12288) = 12288
+read(5, "Ri\0\0\0Rj\0\0\0R=\0\0\0Rf\0\0\0Rp\0\0\0Rr\0\0\0Rg"..., 4096) = 3967
+read(5, "", 4096)                       = 0
+brk(0x1356000)                          = 0x1356000
+close(5)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/math", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/math.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/math.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/mathmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/math.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/math.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/struct.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/struct.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/struct", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/struct.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/struct.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/structmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/struct.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=82, ...}) = 0
+open("/usr/lib/python2.7/struct.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=237, ...}) = 0
+read(5, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\2\0\0\0@\0\0\0s.\0\0\0d\0"..., 4096) = 237
+fstat(5, {st_mode=S_IFREG|0644, st_size=237, ...}) = 0
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/util", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/util.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/util.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/utilmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/util.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0664, st_size=901, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/midi/util.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=909, ...}) = 0
+read(5, "\3\363\r\n\312\341\24\\c\0\0\0\0\0\0\0\0\1\0\0\0@\0\0\0s\26\0\0\0d\0"..., 4096) = 909
+fstat(5, {st_mode=S_IFREG|0644, st_size=909, ...}) = 0
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/fileio", 0x7fff59651650) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/fileio.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/fileio.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/fileiomodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/fileio.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0664, st_size=6313, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/midi/fileio.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=6037, ...}) = 0
+read(5, "\3\363\r\n\312\341\24\\c\0\0\0\0\0\0\0\0\3\0\0\0@\0\0\0s\212\0\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=6037, ...}) = 0
+read(5, "\0\0\0t\3\0\0\0bufR#\0\0\0(\0\0\0\0(\0\0\0\0s5\0\0\0/"..., 4096) = 1941
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/midi/warnings", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/warnings.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/warnings.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/warningsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/warnings.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/warnings.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/midi/constants", 0x7fff59651150) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/constants.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/constants.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/constantsmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/midi/constants.py", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0664, st_size=1575, ...}) = 0
+open("/usr/local/lib/python2.7/dist-packages/midi/constants.pyc", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=1575, ...}) = 0
+read(6, "\3\363\r\n\312\341\24\\c\0\0\0\0\0\0\0\0\f\0\0\0@\0\0\0s_\2\0\0d\0"..., 4096) = 1575
+fstat(6, {st_mode=S_IFREG|0644, st_size=1575, ...}) = 0
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+close(5)                                = 0
+close(4)                                = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/base64.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/base64.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/base64", 0x7fff59651ba0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/base64.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/base64.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/base64module.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/base64.py", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0755, st_size=11806, ...}) = 0
+open("/usr/lib/python2.7/base64.pyc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=11261, ...}) = 0
+read(4, "\3\363\r\n>\327\351[c\0\0\0\0\0\0\0\0\16\0\0\0@\0\0\0s\335\2\0\0d\0"..., 4096) = 4096
+fstat(4, {st_mode=S_IFREG|0644, st_size=11261, ...}) = 0
+brk(0x1379000)                          = 0x1379000
+read(4, "correctly padded.  Characters th"..., 4096) = 4096
+read(4, "as input.  For security purposes"..., 4096) = 3069
+read(4, "", 4096)                       = 0
+brk(0x1376000)                          = 0x1376000
+close(4)                                = 0
+stat("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/mythril-0.15.8-py2.7.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/Jinja2-2.10-py2.7.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coverage-4.5.1-py2.7-linux-x86_64.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_tester-0.1.0b23-py2.7.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/ethereum-2.3.1-py2.7.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/rlp-1.0.0b4-py2.7.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/repoze.lru-0.7-py2.7.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/pycryptodome-3.6.1-py2.7-linux-x86_64.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/coincurve-7.1.0-py2.7-linux-x86_64.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/eth_utils-1.0.3-py2.7.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/python2.7/dist-packages/cytoolz-0.9.0.1-py2.7-linux-x86_64.egg/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/v0va/Desktop/xmas/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/string.py", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/v0va/Desktop/xmas/string.pyc", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python2.7/string", 0x7fff596516a0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/string.x86_64-linux-gnu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/string.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/stringmodule.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib/python2.7/string.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=21548, ...}) = 0
+open("/usr/lib/python2.7/string.pyc", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=20357, ...}) = 0
+read(5, "\3\363\r\n\33\327\351[c\0\0\0\0\0\0\0\0\5\0\0\0@\0\0\0s\226\2\0\0d\0"..., 4096) = 4096
+fstat(5, {st_mode=S_IFREG|0644, st_size=20357, ...}) = 0
+read(5, "    (?P<escaped>%(delim)s) |   #"..., 12288) = 12288
+read(5, " string str with all occurrences"..., 4096) = 3973
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+close(4)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd5ab59000
+close(3)                                = 0
+open("file", O_RDONLY)                  = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=4, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=4, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=4, ...}) = 0
+read(3, "ABC\n", 4096)                  = 4
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 3), ...}) = 0
+write(1, "[*] Encoding ABC\n", 17)      = 17
+write(1, "\n", 1)                       = 1
+open("file.mid", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+write(3, "MThd\0\0\0\6\0\1\0\1\0\334MTrk\0\0\0D\0\220(\24d\200)\0\0\220"..., 90) = 90
+close(3)                                = 0
+write(1, "[*] Written message to file.mid\n", 32) = 32
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fdd5bf464b0}, {0x7fdd5c342720, [], SA_RESTORER, 0x7fdd5bf464b0}, 8) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
