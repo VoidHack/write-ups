@@ -4,7 +4,7 @@
 ## Information
 **Category:** | **Points:** | **Writeup Author**
 --- | --- | ---
-Crypto | 499 | MiKHalyCH
+Crypto | 486 | MiKHalyCH
 
 **Description:** 
 

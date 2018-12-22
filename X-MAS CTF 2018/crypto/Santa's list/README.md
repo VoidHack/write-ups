@@ -4,7 +4,7 @@
 ## Information
 **Category:** | **Points:** | **Writeup Author**
 --- | --- | ---
-Crypto | 292 | MiKHalyCH
+Crypto | 286 | MiKHalyCH
 
 **Description:** 
 
@@ -104,7 +104,7 @@ ___________
 ## Information
 **Category:** | **Points:** | **Writeup Author**
 --- | --- | ---
-Crypto | 333 | MiKHalyCH, a1exdandy
+Crypto | 328 | MiKHalyCH, a1exdandy
 
 **Description:** 
 >Santa's MechaGnomes caught up to some intense traffic on their servers so they decided to modify santa's database server to be DDoS-proof but it still is corrupted, find out if Galf was nice or not but try not to DDoS the server.
