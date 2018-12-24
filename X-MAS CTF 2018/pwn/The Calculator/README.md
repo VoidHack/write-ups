@@ -1,5 +1,5 @@
 # __X-MAS CTF 2018__
-## _Calculator_
+## _The Calculator_
 
 ## Information
 **Category:** | **Points:** | **Writeup Author**
@@ -32,7 +32,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 ![solution](images/part1.png)
 
-## _Calculator 2.0_
+## _The Calculator 2.0_
 
 ## Information
 **Category:** | **Points:** | **Writeup Author**
