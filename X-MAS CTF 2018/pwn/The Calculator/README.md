@@ -19,7 +19,7 @@ Pwn | 495 | a1exdandy
 ## Solution
 
 We have the binary with the format-string vulnerability, but input is restricted for only `%n` and modifications (`%N$n`, `%N$hn` and so on for an integer `N`).
-Also, we have a calculator that can perform `+`, `-`, `<`, `=`, `>`, `#` operations (put value into `register1`), `$` (put value into `register2`), `@` (get value from `register2`), `!` (get value from `register1`). The result of the expression can be distinguished if only it equals `0` or `1`. (`Santa hates those big numbers...`).
+Also, we have a calculator that can perform `+`, `-`, `<`, `=`, `>`, `#` (put value into `register1`), `$` (put value into `register2`), `@` (get value from `register2`), `!` (get value from `register1`) operations. The result of the expression can be distinguished if only it equals `0` or `1`. (`Santa hates those big numbers...`).
 We can put some complex expressions, e.g. `1 + 2 + 3 + 4`, and all intermediate calculations will be on a stack after that.
 Also, `register2` contains a buffer address at the startup. So, we can put a non-zero value into `buffer[31]` to leak the flag.
 
