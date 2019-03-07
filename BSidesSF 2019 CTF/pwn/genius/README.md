@@ -28,9 +28,9 @@ So, basically, we are given with two binaries: `loader` and `genius`. Let's star
 
 #### main function
 
-It's a relly tiny binary and it does the following:
+It's a really tiny binary and it does the following:
 
-1. Read `genius` binary into the stack char array (as binary data).
+1. Reads `genius` binary into the stack char array (as a binary data).
 
 <p align="center">
   <img src="screens/read_binary.png">
@@ -48,13 +48,13 @@ It's a relly tiny binary and it does the following:
   <img src="screens/second_genius.png">
 </p>
 
-4. Put `genius_binary` into a tmp file and execute it
+4. Puts `genius_binary` into a tmp file and executes it
 
 <p align="center">
   <img src="screens/execute.png">
 </p>
 
-Now let's talk about each statement above. I suppose the first statement is clear, the `genius` binary is just loaded into stack memory of `loader` executable in runtime. The more interesting part here is patch applying. Before diving into `apply_patch` function we need to understand that `apply_patch` takes `code` we enter, `offsetX` and `byteX` as parameters. After calling for `apply_patch` genius binary is changed: `genius_binary[offsetX] = byteX`. Looks like we input some code that is converted further into offset and some byte. It means that we can change any two bytes of the `genius` binary. Sounds cool!
+Now let's talk about each statement above. I suppose the first statement is clear -- the `genius` binary is just loaded into the stack memory of `loader` executable in runtime. The more interesting part here is patch applying. Before diving into `apply_patch` function we need to understand that `apply_patch` takes `code` we enter, `offsetX` and `byteX` as parameters. After calling for `apply_patch` `genius_binary` is changed: `genius_binary[offsetX] = byteX`. Looks like we input some code that is converted further into an offset and some byte. It means that we can change any two bytes of the `genius` binary. Sounds cool!
 
 #### apply_patch function
 
@@ -82,11 +82,11 @@ Just `byte <-> byte` matching. But look at the resulting bytes more closely. The
 1111
 ```
 
-Interesting, but let's back to `apply_patch function`. `offset` and `byte` are calculated using converted bytes. More accurately, it uses some bits of each converted byte to calculate `offset` (2 bytes size) and `byte` (1 byte size). Now, we just need to understand how bits are placed. After spending some time we've got the next:
+Interesting, but let's back to `apply_patch` function. `offset` and `byte` are calculated using converted bytes. More accurately, it uses some bits of each converted byte to calculate `offset` (2 bytes size) and `byte` (1 byte size). Now, we just need to understand how bits are placed. After spending some time we've got the next:
 
 - First line : global bit index
 
-- Second line : converted byte number (you see them in the picture above somewhere)
+- Second line : converted byte number (you saw them in the picture somewhere above)
 
 - Third line : local bit index. If you remember, all our converted bytes are between `0b000` and `0b1111`, so different bits are used in different places.
 
@@ -142,7 +142,7 @@ def gen_input(addr, val):
            magic_dict[b5] + \
            magic_dict[b6]
 
-# it will generate the input that will be converted
+# it will generate an input that will be converted
 # into offset=0x1122 and byte=0x41
 gen_input(0x1122, 0x41)
 ```
@@ -153,7 +153,7 @@ Alright, we're done with `loader` now. As we understood, `loader` allows us to c
 
 You can reverse the binary by your own :D We will only discuss the most important parts for solving the task.
 
-Basically, `genius` is a tetris game. We have spent some time reversing it and haven't found any bugs in the game itself. The most important here is that the game map is stored using set and unset bits. It means that each game map point is an object of the bit array.
+Basically, `genius` is a Tetris game. We have spent some time reversing it and haven't found any bugs in the game itself. The most important part here is that the game map is stored using set and unset bits. It means that each game map point is an object of the bit array.
 
 <p align="center">
   <img src="screens/get_point.jpg">
@@ -161,27 +161,27 @@ Basically, `genius` is a tetris game. We have spent some time reversing it and h
 
 ### Exploiting the game
 
-As long as the game doesn't have any visible bugs, we need to create them! If we look at the code of `main` function more closely, we can notice that in the end of the function, `memset` is called:
+As long as the game doesn't have any visible bugs, we need to create them! If we look at the code of `main` function more closely, we can notice that at the end of the function `memset` is called:
 
 <p align="center">
   <img src="screens/before_patch.png">
 </p>
 
-This is potentially can be used to create a vulnerable code. Let's imagine we change `memset` to `system`, then everything we need to do is to create `sh;` string somewhere inside of `game_buf` (which is the game map actually).
+This is potentially can be used to create a vulnerable code. Let's imagine we change `memset` to `system`, then everything we need to do after this  is to create `sh;` string somewhere inside of `game_buf` (which is the game map actually).
 
-We can change `memset` to `system` by changing only one byte : `0xcb -> 0x8b` in the function call. Cool, we have another byte to use. Where it can be used? Well, we need to create `sh;` string at the beginning of the `game_buf` to pop up a shell. But this is not very convenient, it's hard to control beginning of the game map. Instead, we can change offset to the pushed address for memset in order to shift the beginning of `game_buf` somewhere further which will be convenient.
+We can change `memset` to `system` by changing only one byte : `0xcb -> 0x8b` in the function call. Cool, now we have the last one byte to use. Where it can be used? Well, we need to create `sh;` string at the beginning of the `game_buf` to pop up a shell. But this is not very convenient, it's hard to control beginning of the game map. Instead, we can change offset to the pushed address for `memset` in order to shift the beginning of `game_buf` somewhere further which will be nice.
 
-Alright, here are an example of `sh;` string in the game buffer:
+Alright, here is an example of `sh;` string in the game buffer:
 
 <p align="center">
   <img src="screens/sh_in_map.jpg">
 </p>
 
-So, we need to do three things:
+Generally speaking, we need to do three things:
 
-1. Change `memset` to `system` by changing `0xcb` to `0x8b` at `0x1551` offset of the `genius` binary
+1. Change `memset` to `system` by changing `0xcb` to `0x8b` at `0x1551` offset of the `genius` binary beginning
 
-2. Change the beginning of `game_buf` for `system`. `0xa0 -> 0xab` at `0x154c` offset
+2. Change the beginning of `game_buf` for `system`. `0xa0 -> 0xab` at `0x154c` offset of the beginning.
 
 3. Construct `sh;` as shown in the picture above.
 
@@ -586,4 +586,4 @@ he used `sleep(1)` and it was a huge mistake. a1exdandy fixed it some time after
 
 > Flag: CTF{game_genie_killed_the_nintendo_star}
 
-It was nice chall and we enjoyed it a lot :)
+It was a nice chall and we enjoyed it a lot :)
