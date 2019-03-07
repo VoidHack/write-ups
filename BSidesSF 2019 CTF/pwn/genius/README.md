@@ -1,6 +1,6 @@
-# ASIS CTF Finals 2018 
+# BSidesSF 2019 CTF 
 
-## Ariogen
+## genius
 
 ## Information
 
